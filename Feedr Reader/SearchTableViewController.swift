@@ -1,5 +1,5 @@
 //
-//  FeedTableViewController.swift
+//  SearchTableViewController.swift
 //  Feedr Reader
 //
 //  Created by Joshua Fredrickson on 10/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController {
+class SearchTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +40,7 @@ class FeedTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "topStoryCell-ID", for: indexPath) as! TopStoryTableViewCell
-            cell.headlineLabel.text = "Top Story Now!"
-            //cell.storyImage.image =
+            let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell-ID", for: indexPath) as! SearchTableViewCell
             return cell
         } else { // alternate between left and right image aligned versions of the small story cell
             if indexPath.row % 2 == 0 {

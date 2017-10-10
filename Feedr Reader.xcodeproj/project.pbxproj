@@ -21,6 +21,10 @@
 		EFC80D4B1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */; };
 		EFC80D4D1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */; };
 		EFC80D4E1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */; };
+		EFC80D501F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */; };
+		EFC80D511F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */; };
+		EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
+		EFC80D541F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,8 @@
 		EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoryTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftImageTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightImageTableViewCell.swift; sourceTree = "<group>"; };
+		EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +97,12 @@
 			children = (
 				EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */,
 				EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */,
-				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
+				EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */,
+				EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */,
 				EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */,
+				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
 				EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */,
 				EFC80D2C1F8BF2A900B0E0CA /* LaunchScreen.storyboard */,
 				EFC80D2F1F8BF2A900B0E0CA /* Info.plist */,
@@ -221,6 +229,8 @@
 				EFC80D4A1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */,
 				EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
+				EFC80D501F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */,
+				EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +241,8 @@
 				EFC80D4B1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */,
 				EFC80D4E1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */,
 				EFC80D391F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift in Sources */,
+				EFC80D541F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
+				EFC80D511F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */,
 				EFC80D451F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D481F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 			);
