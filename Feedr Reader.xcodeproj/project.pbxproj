@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */; };
-		EFC80D231F8BF2A900B0E0CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D221F8BF2A900B0E0CA /* ViewController.swift */; };
 		EFC80D261F8BF2A900B0E0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC80D241F8BF2A900B0E0CA /* Main.storyboard */; };
 		EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D271F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld */; };
 		EFC80D2B1F8BF2A900B0E0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */; };
 		EFC80D2E1F8BF2A900B0E0CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC80D2C1F8BF2A900B0E0CA /* LaunchScreen.storyboard */; };
 		EFC80D391F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D381F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift */; };
+		EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */; };
+		EFC80D451F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */; };
+		EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */; };
+		EFC80D481F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */; };
+		EFC80D4A1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */; };
+		EFC80D4B1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */; };
+		EFC80D4D1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */; };
+		EFC80D4E1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +36,6 @@
 /* Begin PBXFileReference section */
 		EFC80D1D1F8BF2A900B0E0CA /* Feedr Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feedr Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFC80D221F8BF2A900B0E0CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFC80D251F8BF2A900B0E0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFC80D281F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Feedr_Reader.xcdatamodel; sourceTree = "<group>"; };
 		EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +44,10 @@
 		EFC80D341F8BF2AA00B0E0CA /* Feedr ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feedr ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC80D381F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedr_ReaderTests.swift; sourceTree = "<group>"; };
 		EFC80D3A1F8BF2AA00B0E0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoryTableViewCell.swift; sourceTree = "<group>"; };
+		EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftImageTableViewCell.swift; sourceTree = "<group>"; };
+		EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */,
-				EFC80D221F8BF2A900B0E0CA /* ViewController.swift */,
+				EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */,
 				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
+				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
+				EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */,
+				EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */,
 				EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */,
 				EFC80D2C1F8BF2A900B0E0CA /* LaunchScreen.storyboard */,
 				EFC80D2F1F8BF2A900B0E0CA /* Info.plist */,
@@ -203,7 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
-				EFC80D231F8BF2A900B0E0CA /* ViewController.swift in Sources */,
+				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
+				EFC80D4D1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */,
+				EFC80D4A1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */,
+				EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC80D4B1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */,
+				EFC80D4E1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */,
 				EFC80D391F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift in Sources */,
+				EFC80D451F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
+				EFC80D481F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D2UCX5FZW;
 				INFOPLIST_FILE = "Feedr Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustykeyboard.Feedr-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D2UCX5FZW;
 				INFOPLIST_FILE = "Feedr Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dustykeyboard.Feedr-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
