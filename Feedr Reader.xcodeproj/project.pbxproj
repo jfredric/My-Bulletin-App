@@ -25,6 +25,7 @@
 		EFC80D511F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */; };
 		EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
 		EFC80D541F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
+		EFC80D881F8E655900B0E0CA /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightImageTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EFC80D491F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift */,
 				EFC80D4C1F8C2E3900B0E0CA /* RightImageTableViewCell.swift */,
 				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
+				EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */,
 				EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */,
 				EFC80D2C1F8BF2A900B0E0CA /* LaunchScreen.storyboard */,
 				EFC80D2F1F8BF2A900B0E0CA /* Info.plist */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
+				EFC80D881F8E655900B0E0CA /* ArticleWebViewController.swift in Sources */,
 				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 				EFC80D4D1F8C2E3900B0E0CA /* RightImageTableViewCell.swift in Sources */,
 				EFC80D4A1F8C2E2E00B0E0CA /* LeftImageTableViewCell.swift in Sources */,
