@@ -46,13 +46,13 @@ class FeedTableViewController: UITableViewController {
             return cell
         } else { // alternate between left and right image aligned versions of the small story cell
             if indexPath.row % 2 == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "rightImageStoryCell-ID", for: indexPath) as! RightImageTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "rightImageStoryCell-ID", for: indexPath) as! SmallSToryTableViewCell
                 cell.headlineLabel.text = "Stories aligned to the right"
                 cell.descriptionLabel.text = "bla bla bla bla"
                 //set image here
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "leftImageStoryCell-ID", for: indexPath) as! LeftImageTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "leftImageStoryCell-ID", for: indexPath) as! SmallSToryTableViewCell
                 cell.headlineLabel.text = "Stories aligned to the left"
                 cell.descriptionLabel.text = "bla bla bla bla"
                 //set image here

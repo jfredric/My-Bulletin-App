@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2JW-E5-Ngk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EBq-Zd-CH3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="189"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xh3-rP-l6T" id="OL9-7E-cWk">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="188.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dky-le-qCL">
@@ -96,11 +96,11 @@
                                     <outlet property="tagsTextField" destination="SQ9-bV-FKD" id="QFx-e2-VzN"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftImageStoryCell-ID" rowHeight="76" id="fDY-H2-iL7" userLabel="Left Image Story Table View Cell" customClass="LeftImageTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftImageStoryCell-ID" rowHeight="76" id="fDY-H2-iL7" userLabel="Left Image Story Table View Cell" customClass="SmallSToryTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="217" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDY-H2-iL7" id="D5x-Ir-zdV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-1V-1DC">
@@ -137,16 +137,16 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLabel" destination="FEU-pl-0g8" id="jJA-dY-KxZ"/>
-                                    <outlet property="headlineLabel" destination="den-PZ-K0k" id="t9J-9u-yBW"/>
-                                    <outlet property="storyImageView" destination="rLJ-1V-1DC" id="F3k-qB-t8p"/>
+                                    <outlet property="descriptionLabel" destination="FEU-pl-0g8" id="5pA-xb-PKe"/>
+                                    <outlet property="headlineLabel" destination="den-PZ-K0k" id="dU2-rB-XAr"/>
+                                    <outlet property="storyImageView" destination="rLJ-1V-1DC" id="gSM-Wd-Vsz"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightImageStoryCell-ID" rowHeight="76" id="Gxb-nz-6wM" userLabel="Right Image Story Table View Cell" customClass="RightImageTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightImageStoryCell-ID" rowHeight="76" id="Gxb-nz-6wM" userLabel="Right Image Story Table View Cell" customClass="SmallSToryTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="293" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gxb-nz-6wM" id="vwV-6O-Glc">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-Bn-TzE">
@@ -183,9 +183,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLabel" destination="boo-oc-fgh" id="Not-aQ-fx9"/>
-                                    <outlet property="headlineLabel" destination="Oj0-5W-boU" id="5cL-Ub-gjM"/>
-                                    <outlet property="storyImageView" destination="Qol-Bn-TzE" id="Ye3-HO-Y1P"/>
+                                    <outlet property="descriptionLabel" destination="boo-oc-fgh" id="VpL-ek-wSi"/>
+                                    <outlet property="headlineLabel" destination="Oj0-5W-boU" id="wRb-Qr-vix"/>
+                                    <outlet property="storyImageView" destination="Qol-Bn-TzE" id="gs1-oK-6lC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -215,11 +215,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Vu-m8-C9r" id="UUT-cs-g8d">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3rM-FN-GEo">
-                                                    <rect key="frame" x="16" y="0.0" width="289" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="289" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -232,11 +232,11 @@
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DgQ-9G-H7t" id="AxI-SD-EMW">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zLE-J3-Q4b">
-                                                    <rect key="frame" x="16" y="0.0" width="289" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="289" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -249,11 +249,11 @@
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4XT-XO-hcL" id="U6j-uz-Rfv">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C3Y-DK-7Ok">
-                                                    <rect key="frame" x="16" y="0.0" width="289" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="289" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -289,7 +289,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tSe-81-dl4" id="emY-Da-Vys">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1g-sc-Cug">
@@ -322,11 +322,11 @@
                                     <outlet property="storyImage" destination="N1g-sc-Cug" id="fEc-fj-Nie"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftImageStoryCell-ID" rowHeight="76" id="d5U-Lk-SPp" userLabel="Left Image Story Table View Cell" customClass="LeftImageTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftImageStoryCell-ID" rowHeight="76" id="d5U-Lk-SPp" userLabel="Left Image Story Table View Cell" customClass="SmallSToryTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="208" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d5U-Lk-SPp" id="CCQ-4e-kc9">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2tw-s6-mfG">
@@ -363,16 +363,16 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLabel" destination="mPd-Kq-Sns" id="hyS-CR-Knp"/>
-                                    <outlet property="headlineLabel" destination="gIu-Jo-3du" id="3U4-jT-nB9"/>
-                                    <outlet property="storyImageView" destination="2tw-s6-mfG" id="SJB-Bs-ev1"/>
+                                    <outlet property="descriptionLabel" destination="mPd-Kq-Sns" id="pcB-6K-mBv"/>
+                                    <outlet property="headlineLabel" destination="gIu-Jo-3du" id="o5M-Yf-FwV"/>
+                                    <outlet property="storyImageView" destination="2tw-s6-mfG" id="yQW-aO-mJr"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightImageStoryCell-ID" rowHeight="76" id="l6P-Sd-0XB" userLabel="Right Image Story Table View Cell" customClass="RightImageTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightImageStoryCell-ID" rowHeight="76" id="l6P-Sd-0XB" userLabel="Right Image Story Table View Cell" customClass="SmallSToryTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="284" width="320" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l6P-Sd-0XB" id="dtT-dE-D3o">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RF1-CM-Knf">
@@ -409,9 +409,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionLabel" destination="T8G-Jz-FxF" id="Omw-ds-wg2"/>
-                                    <outlet property="headlineLabel" destination="cZX-5T-JXx" id="T4D-yW-JUo"/>
-                                    <outlet property="storyImageView" destination="RF1-CM-Knf" id="cQF-jQ-72r"/>
+                                    <outlet property="descriptionLabel" destination="T8G-Jz-FxF" id="rzB-Kx-XVN"/>
+                                    <outlet property="headlineLabel" destination="cZX-5T-JXx" id="mzN-O9-WGq"/>
+                                    <outlet property="storyImageView" destination="RF1-CM-Knf" id="trL-uo-Yyc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
