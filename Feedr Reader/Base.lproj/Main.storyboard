@@ -104,6 +104,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Search" id="TQl-2o-Iwe"/>
+                    <connections>
+                        <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromSearch-ID" id="6dN-Da-1gc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwO-Gu-2YV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +232,6 @@
                                 <connections>
                                     <outlet property="headlineLabel" destination="mHn-Sv-Oh5" id="Lml-Sj-7pM"/>
                                     <outlet property="storyImage" destination="N1g-sc-Cug" id="fEc-fj-Nie"/>
-                                    <segue destination="2JW-E5-Ngk" kind="show" id="RXd-qt-S7t"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -239,6 +241,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Home" id="W9E-6j-gey"/>
+                    <connections>
+                        <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromFeed-ID" id="xfF-zX-ASN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMR-a5-0m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,7 +277,7 @@
                     <navigationItem key="navigationItem" id="YIf-7A-me1">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="lJs-6C-BUP" userLabel="Done Bar Button">
                             <connections>
-                                <action selector="doneButtonTapped:" destination="qnT-ch-P7K" id="d7c-Fu-Rg0"/>
+                                <action selector="doneButtonTapped:" destination="qnT-ch-P7K" id="YRH-t2-kMV"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
@@ -312,10 +317,10 @@
             </objects>
             <point key="canvasLocation" x="1155" y="-87"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Article Navigation Controller-->
         <scene sceneID="TaC-jy-nvD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2JW-E5-Ngk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2JW-E5-Ngk" userLabel="Article Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fuf-3b-To7">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -335,4 +340,7 @@
         <image name="navicon-share" width="33" height="33"/>
         <image name="navicon-website" width="33" height="33"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6dN-Da-1gc"/>
+    </inferredMetricsTieBreakers>
 </document>

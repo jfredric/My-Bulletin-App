@@ -62,6 +62,11 @@ class SearchTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != 0 { // alternatively, make that cell not-selectable.
+            self.performSegue(withIdentifier: "showArticleFromSearch-ID", sender: nil)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

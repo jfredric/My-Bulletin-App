@@ -29,7 +29,8 @@ class ArticleWebViewController: UIViewController {
     
     // MARK: ACTIONS
     
-    @IBAction func doneButtonTapped(_ sender: Any) {
+    @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func shareButtonTapped(_ sender: Any) {
