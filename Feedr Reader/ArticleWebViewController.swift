@@ -19,6 +19,23 @@ class ArticleWebViewController: UIViewController {
 
         //let myURL = URL(string: "https://www.bbc.co.uk/news/world-europe-41582469")
         //let myRequest = URLRequest(url: myURL!)
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: ACTIONS
+    
+    @IBAction func doneButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func shareButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func websiteButtonTapped(_ sender: Any) {
         let urlString = "https://www.bbc.co.uk/news/world-europe-41582469"
         
         if let url = URL(string: urlString) {
@@ -30,13 +47,7 @@ class ArticleWebViewController: UIViewController {
             print("Error: \(urlString) is not a URL.")
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
     /*
     // MARK: - Navigation
 

@@ -18,6 +18,9 @@ class SearchTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
+        tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,21 +41,21 @@ class SearchTableViewController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell-ID", for: indexPath) as! SearchTableViewCell
             return cell
         } else { // alternate between left and right image aligned versions of the small story cell
             if indexPath.row % 2 == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "rightImageStoryCell-ID", for: indexPath) as! SmallSToryTableViewCell
-                cell.headlineLabel.text = "Stories aligned to the right"
-                cell.descriptionLabel.text = "bla bla bla bla"
+                let cell = tableView.dequeueReusableCell(withIdentifier: "rightStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
+                cell.storyHeadlineLabel.text = "Stories aligned to the right"
+                cell.storyDescriptionLabel.text = "bla bla bla bla"
                 //set image here
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "leftImageStoryCell-ID", for: indexPath) as! SmallSToryTableViewCell
-                cell.headlineLabel.text = "Stories aligned to the left"
-                cell.descriptionLabel.text = "bla bla bla bla"
+                let cell = tableView.dequeueReusableCell(withIdentifier: "leftStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
+                cell.storyHeadlineLabel.text = "Stories aligned to the left"
+                cell.storyDescriptionLabel.text = "bla bla bla bla"
                 //set image here
                 return cell
             }

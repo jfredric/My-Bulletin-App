@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */; };
+		EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */; };
+		EF15F7EF1F911EAE00B47994 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */; };
+		EF15F7F01F911EAE00B47994 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */; };
 		EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */; };
 		EFC80D261F8BF2A900B0E0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC80D241F8BF2A900B0E0CA /* Main.storyboard */; };
 		EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D271F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld */; };
@@ -22,7 +26,6 @@
 		EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
 		EFC80D541F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
 		EFC80D881F8E655900B0E0CA /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */; };
-		EFC80E011F8F4AD100B0E0CA /* SmallSToryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80E001F8F4AD100B0E0CA /* SmallSToryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightStoryTableViewCell.xib; sourceTree = "<group>"; };
+		EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftStoryTableViewCell.xib; sourceTree = "<group>"; };
+		EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallStoryTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D1D1F8BF2A900B0E0CA /* Feedr Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feedr Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC80D251F8BF2A900B0E0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +57,6 @@
 		EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
-		EFC80E001F8F4AD100B0E0CA /* SmallSToryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallSToryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +104,14 @@
 				EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
-				EFC80E001F8F4AD100B0E0CA /* SmallSToryTableViewCell.swift */,
+				EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */,
+				EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */,
 				EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */,
 				EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */,
 				EFC80D2C1F8BF2A900B0E0CA /* LaunchScreen.storyboard */,
 				EFC80D2F1F8BF2A900B0E0CA /* Info.plist */,
 				EFC80D271F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld */,
+				EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */,
 			);
 			path = "Feedr Reader";
 			sourceTree = "<group>";
@@ -201,8 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */,
 				EFC80D2E1F8BF2A900B0E0CA /* LaunchScreen.storyboard in Resources */,
 				EFC80D2B1F8BF2A900B0E0CA /* Assets.xcassets in Resources */,
+				EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */,
 				EFC80D261F8BF2A900B0E0CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +233,9 @@
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
 				EFC80D881F8E655900B0E0CA /* ArticleWebViewController.swift in Sources */,
 				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
-				EFC80E011F8F4AD100B0E0CA /* SmallSToryTableViewCell.swift in Sources */,
 				EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
+				EF15F7EF1F911EAE00B47994 /* SmallStoryTableViewCell.swift in Sources */,
 				EFC80D501F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */,
 				EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
 			);
@@ -239,6 +248,7 @@
 				EFC80D391F8BF2AA00B0E0CA /* Feedr_ReaderTests.swift in Sources */,
 				EFC80D541F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
 				EFC80D511F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */,
+				EF15F7F01F911EAE00B47994 /* SmallStoryTableViewCell.swift in Sources */,
 				EFC80D451F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D481F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 			);
