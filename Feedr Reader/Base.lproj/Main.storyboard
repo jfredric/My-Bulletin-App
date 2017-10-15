@@ -62,10 +62,16 @@
                                             <rect key="frame" x="8" y="150" width="148" height="30"/>
                                             <size key="titleShadowOffset" width="2" height="2"/>
                                             <state key="normal" title="All Topics"/>
+                                            <connections>
+                                                <segue destination="fAD-Vz-GII" kind="show" identifier="changeTopic-ID" id="sRN-qt-u0a"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-Bf-rb5" userLabel="Locations Button">
                                             <rect key="frame" x="164" y="150" width="148" height="30"/>
                                             <state key="normal" title="All Locations"/>
+                                            <connections>
+                                                <segue destination="fAD-Vz-GII" kind="show" identifier="changeLocation-ID" id="5ID-9T-OxD"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -281,7 +287,7 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="navicon-share" id="qVg-DL-MKy" userLabel="Share Bar Button">
+                            <barButtonItem systemItem="action" id="qVg-DL-MKy" userLabel="Share Bar Button">
                                 <connections>
                                     <action selector="shareButtonTapped:" destination="qnT-ch-P7K" id="K4i-VF-Kzj"/>
                                 </connections>
@@ -296,7 +302,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CwY-GQ-dp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="1473"/>
+            <point key="canvasLocation" x="769" y="2271"/>
+        </scene>
+        <!--Picker Table View Controller-->
+        <scene sceneID="zyY-X7-gUD">
+            <objects>
+                <tableViewController id="yVo-mk-SBG" userLabel="Picker Table View Controller" customClass="PickerTableViewController" customModule="Feedr_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GgP-9Q-F01">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pickerTableViewCell-ID" id="IN8-7Q-wHw" userLabel="Picker Table View Cell" customClass="PickerTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IN8-7Q-wHw" id="KBY-8K-3ik">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic/Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-ZQ-Lrz">
+                                            <rect key="frame" x="8" y="11.5" width="304" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cKL-ZQ-Lrz" firstAttribute="leading" secondItem="KBY-8K-3ik" secondAttribute="leadingMargin" id="SaX-z2-kVs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cKL-ZQ-Lrz" secondAttribute="trailing" id="emq-SH-orD"/>
+                                        <constraint firstItem="cKL-ZQ-Lrz" firstAttribute="centerY" secondItem="KBY-8K-3ik" secondAttribute="centerY" id="ffg-Ml-3wC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="cKL-ZQ-Lrz" id="zCB-Lr-HmJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="yVo-mk-SBG" id="nW1-A6-kPd"/>
+                            <outlet property="delegate" destination="yVo-mk-SBG" id="NiW-pC-7MA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="CYw-dQ-uIL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nyd-yS-kUP">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="yVo-mk-SBG" id="RPB-Au-lO7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVj-YA-5oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="2270"/>
+        </scene>
+        <!--Picker Navigation Controller-->
+        <scene sceneID="8U5-ft-eEO">
+            <objects>
+                <navigationController id="fAD-Vz-GII" userLabel="Picker Navigation Controller" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zfb-YF-a0M">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yVo-mk-SBG" kind="relationship" relationship="rootViewController" id="qCb-M5-Kzu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0V-Nq-Kzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="1496"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ogj-cn-IJZ">
@@ -333,14 +407,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chU-WL-6lF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="1473"/>
+            <point key="canvasLocation" x="769" y="1496"/>
         </scene>
     </scenes>
     <resources>
-        <image name="navicon-share" width="33" height="33"/>
         <image name="navicon-website" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6dN-Da-1gc"/>
+        <segue reference="xfF-zX-ASN"/>
+        <segue reference="5ID-9T-OxD"/>
     </inferredMetricsTieBreakers>
 </document>

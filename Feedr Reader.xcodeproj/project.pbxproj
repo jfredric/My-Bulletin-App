@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0EA6FE1F9191DA004B4566 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EA6FD1F9191DA004B4566 /* PickerTableViewController.swift */; };
+		EF0EA7001F92EDF2004B4566 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EA6FF1F92EDF2004B4566 /* PickerTableViewCell.swift */; };
 		EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */; };
 		EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */; };
 		EF15F7EF1F911EAE00B47994 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF0EA6FD1F9191DA004B4566 /* PickerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
+		EF0EA6FF1F92EDF2004B4566 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF15F7EE1F911EAE00B47994 /* SmallStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallStoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFC80D241F8BF2A900B0E0CA /* Main.storyboard */,
+				EF0EA6FF1F92EDF2004B4566 /* PickerTableViewCell.swift */,
+				EF0EA6FD1F9191DA004B4566 /* PickerTableViewController.swift */,
 				EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */,
 				EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */,
 				EFC80D871F8E655900B0E0CA /* ArticleWebViewController.swift */,
@@ -231,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
+				EF0EA7001F92EDF2004B4566 /* PickerTableViewCell.swift in Sources */,
 				EFC80D881F8E655900B0E0CA /* ArticleWebViewController.swift in Sources */,
+				EF0EA6FE1F9191DA004B4566 /* PickerTableViewController.swift in Sources */,
 				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 				EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
