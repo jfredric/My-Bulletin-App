@@ -109,7 +109,7 @@
                             <outlet property="delegate" destination="jCK-eD-BwV" id="BlJ-gP-QfR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" id="TQl-2o-Iwe"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="tabicon-search" id="TQl-2o-Iwe"/>
                     <connections>
                         <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromSearch-ID" id="6dN-Da-1gc"/>
                     </connections>
@@ -188,7 +188,7 @@
                             <outlet property="delegate" destination="hgk-Vb-pi6" id="YW7-lX-uIh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Settings" id="HmM-Vd-Qzp" userLabel="Settings"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="tabicon-settings" id="HmM-Vd-Qzp" userLabel="Settings"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUK-AG-WSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +246,7 @@
                             <outlet property="delegate" destination="yqF-Yc-Mcs" id="ebz-k1-tee"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="W9E-6j-gey"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabicon-home" id="W9E-6j-gey"/>
                     <connections>
                         <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromFeed-ID" id="xfF-zX-ASN"/>
                     </connections>
@@ -292,7 +292,7 @@
                                     <action selector="shareButtonTapped:" destination="qnT-ch-P7K" id="K4i-VF-Kzj"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="navicon-website" id="zo0-jF-nvB" userLabel="Website Bar Button">
+                            <barButtonItem image="navicon-url" id="zo0-jF-nvB" userLabel="Website Bar Button">
                                 <connections>
                                     <action selector="websiteButtonTapped:" destination="qnT-ch-P7K" id="KXw-PW-7JA"/>
                                 </connections>
@@ -411,10 +411,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="navicon-website" width="33" height="33"/>
+        <image name="navicon-url" width="33" height="33"/>
+        <image name="tabicon-home" width="33" height="33"/>
+        <image name="tabicon-search" width="33" height="33"/>
+        <image name="tabicon-settings" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xfF-zX-ASN"/>
+        <segue reference="6dN-Da-1gc"/>
         <segue reference="5ID-9T-OxD"/>
     </inferredMetricsTieBreakers>
 </document>
