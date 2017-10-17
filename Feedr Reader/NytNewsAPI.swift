@@ -34,8 +34,8 @@ class NytNewsAPI: NewsAPI {
     // JSON Media Keys & values
     let keyMedia = "multimedia"
     let keyImageURL = "url"
-    let keyImageType = "type"
-    let valueImageNormal = "normal"
+    let keyImageFormat = "format"
+    let valueImageNormal = "Normal"
     let keyImageHeight = "height"
     
     
@@ -100,9 +100,11 @@ class NytNewsAPI: NewsAPI {
                             var bestHeight = 0
                             var bestImageURL = ""
                             for image in images { //look for normal, use biggest otherwise
-                                let imageType = image[self.keyImageType] as! String
-                                if imageType == self.valueImageNormal {
+                                let imageFormat = image[self.keyImageFormat] as! String
+                                //print("checking image:",imageFormat)
+                                if imageFormat == self.valueImageNormal {
                                     bestImageURL = image[self.keyImageURL] as! String
+                                    print("using normal image")
                                     break
                                 } else {
                                     let imageHeight = image[self.keyImageHeight] as! Int
@@ -112,13 +114,8 @@ class NytNewsAPI: NewsAPI {
                                     }
                                 }
                             }
-                            print("(h",newStory.headline,")")
                             newStory.imageURL = bestImageURL
-                            print(newStory.imageURL)
                             newStory.downloadImage()
-                            if newStory.image == nil {
-                                print("image not downloaded")
-                            }
                         }
                         stories.append(newStory)
                     }
