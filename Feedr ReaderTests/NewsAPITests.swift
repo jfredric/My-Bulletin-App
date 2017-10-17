@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import Feedr_Reader
+//@testable import NewsAPI
 
 class Feedr_ReaderTests: XCTestCase {
     
@@ -21,16 +22,19 @@ class Feedr_ReaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func test_updateHeadlines() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        /*let api = NewsAPI.shared
+        
+        api.updateHeadlines(from: "bbc-news")
+        let json = api.apiRequestResults
+        XCTAssert(json[api.keyStatus] != nil, "NewsAPI status not found in json")
+        XCTAssert(json[api.keySortBy] != nil, "NewsAPI sortBy not found in json")
+        XCTAssert(json[api.keySource] != nil, "NewsAPI source not found in json")
+        XCTAssert(json[api.keyArticles] != nil, "NewsAPI articles not found in json")
+        //let articles = json[api.keyArticles]
+        */
     }
     
 }

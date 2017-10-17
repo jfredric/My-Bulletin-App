@@ -21,6 +21,12 @@ class FeedTableViewController: UITableViewController {
         
         tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
+        
+        NewsData.sharedInstance.loadInitialData()
+        NewsData.sharedInstance.setFeedCallBack {
+            self.tableView.reloadData()
+            print("refreshing tableview")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,27 +43,31 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  3
+        return  NewsData.sharedInstance.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellStory = NewsData.sharedInstance.getStory(at: indexPath.row)
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "topStoryCell-ID", for: indexPath) as! TopStoryTableViewCell
-            cell.headlineLabel.text = "Top Story Now!"
-            //cell.storyImage.image =
+            //cell.headlineLabel.text = "Top Story Now!"
+            cell.headlineLabel.text = cellStory.headline
+            cell.storyImage.image = cellStory.image
             return cell
         } else { // alternate between left and right image aligned versions of the small story cell
             if indexPath.row % 2 == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "rightStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
-                cell.storyHeadlineLabel.text = "Stories aligned to the right"
-                cell.storyDescriptionLabel.text = "bla bla bla bla"
+                cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the right"
+                cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
+                cell.storyImageView.image = cellStory.image
                 //set image here
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "leftStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
-                cell.storyHeadlineLabel.text = "Stories aligned to the left"
-                cell.storyDescriptionLabel.text = "bla bla bla bla"
+                cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the left"
+                cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
+                cell.storyImageView.image = cellStory.image
                 //set image here
                 return cell
             }

@@ -210,7 +210,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1g-sc-Cug">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1g-sc-Cug">
                                             <rect key="frame" x="0.0" y="-0.5" width="320" height="179.5"/>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -417,7 +417,7 @@
         <image name="tabicon-settings" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6dN-Da-1gc"/>
+        <segue reference="xfF-zX-ASN"/>
         <segue reference="5ID-9T-OxD"/>
     </inferredMetricsTieBreakers>
 </document>
