@@ -123,9 +123,16 @@
 				EFD781E81F952245004F93DC /* CnnNewsAPI.swift */,
 				EF8CC95F1F966EEF00D8CBCB /* NytNewsAPI.swift */,
 				EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */,
-				EF8CC9611F96778200D8CBCB /* Network.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EF8CC9631F96D7E100D8CBCB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EF8CC9611F96778200D8CBCB /* Network.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		EFC80D141F8BF2A900B0E0CA = {
@@ -149,6 +156,7 @@
 		EFC80D1F1F8BF2A900B0E0CA /* Feedr Reader */ = {
 			isa = PBXGroup;
 			children = (
+				EF8CC9631F96D7E100D8CBCB /* Utility */,
 				EF75ED051F951C82001B1078 /* Model */,
 				EF75ED031F951C08001B1078 /* Controller */,
 				EF75ED041F951C67001B1078 /* View */,
