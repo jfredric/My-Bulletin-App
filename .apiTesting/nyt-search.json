@@ -1,0 +1,632 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2017 The New York Times Company. All Rights Reserved.",
+  "response": {
+    "docs": [
+      {
+        "web_url": "https://www.nytimes.com/2017/10/17/us/politics/john-kelly-trump-fallen-troops.html",
+        "snippet": "President Trump is testing the reluctance of his chief of staff, John F. Kelly, to discuss the death of his son Second Lt. Robert Kelly, who died in combat in 2010.",
+        "print_page": "17",
+        "blog": {},
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "type": "image",
+            "subtype": "xlarge",
+            "url": "images/2017/10/18/us/18dc-obama/18dc-obama-articleLarge.jpg",
+            "height": 418,
+            "width": 600,
+            "rank": 0,
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/10/18/us/18dc-obama/18dc-obama-articleLarge.jpg",
+              "xlargeheight": 418
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "wide",
+            "url": "images/2017/10/18/us/18dc-obama/18dc-obama-thumbWide.jpg",
+            "height": 126,
+            "width": 190,
+            "rank": 0,
+            "legacy": {
+              "wide": "images/2017/10/18/us/18dc-obama/18dc-obama-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "thumbnail",
+            "url": "images/2017/10/18/us/18dc-obama/18dc-obama-thumbStandard.jpg",
+            "height": 75,
+            "width": 75,
+            "rank": 0,
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/10/18/us/18dc-obama/18dc-obama-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            }
+          }
+        ],
+        "headline": {
+          "main": "Top General’s Grief Becomes Political Talking Point for Trump",
+          "print_headline": "Top General’s Grief Becomes a Political Talking Point for the President"
+        },
+        "keywords": [
+          {
+            "isMajor": "N",
+            "rank": 1,
+            "name": "persons",
+            "value": "Trump, Donald J"
+          },
+          {
+            "isMajor": "N",
+            "rank": 2,
+            "name": "persons",
+            "value": "Kelly, John F (1950- )"
+          },
+          {
+            "isMajor": "N",
+            "rank": 3,
+            "name": "subject",
+            "value": "United States Defense and Military Forces"
+          },
+          {
+            "isMajor": "N",
+            "rank": 4,
+            "name": "subject",
+            "value": "Afghanistan War (2001- )"
+          },
+          {
+            "isMajor": "N",
+            "rank": 5,
+            "name": "subject",
+            "value": "Iraq War (2003-11)"
+          },
+          {
+            "isMajor": "N",
+            "rank": 7,
+            "name": "subject",
+            "value": "United States Politics and Government"
+          },
+          {
+            "isMajor": "N",
+            "rank": 8,
+            "name": "subject",
+            "value": "Presidents and Presidency (US)"
+          },
+          {
+            "isMajor": "N",
+            "rank": 9,
+            "name": "persons",
+            "value": "Obama, Barack"
+          }
+        ],
+        "pub_date": "2017-10-18T00:35:42+0000",
+        "document_type": "article",
+        "new_desk": "Politics",
+        "section_name": "Politics",
+        "byline": {
+          "original": "By MARK LANDLER"
+        },
+        "type_of_material": "News",
+        "_id": "59e6a1ef95d0e0246f2109d0",
+        "word_count": 1030,
+        "score": 1.2892145,
+        "uri": "nyt://article/56fed786-a994-5058-a2dd-c787df64e8c3"
+      },
+      {
+        "web_url": "https://www.nytimes.com/reuters/2017/10/17/world/middleeast/17reuters-gulf-qatar-minister.html",
+        "snippet": "Qatar's foreign minister suggested on Tuesday that measures taken by Saudi Arabia and three other Arab states in their dispute with Qatar had hurt the U.S.-led fight against Islamic State, according to the text of an interview with CNBC.",
+        "blog": {},
+        "source": "Reuters",
+        "multimedia": [],
+        "headline": {
+          "main": "Qatar Suggests Gulf Crisis Hurts Fight Against Islamic State: CNBC",
+          "print_headline": "Qatar Suggests Gulf Crisis Hurts Fight Against Islamic State: CNBC"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-18T00:27:28+0000",
+        "document_type": "article",
+        "new_desk": "None",
+        "section_name": "Middle East",
+        "byline": {
+          "original": "By REUTERS"
+        },
+        "type_of_material": "News",
+        "_id": "59e6a00595d0e0246f2109ce",
+        "word_count": 328,
+        "score": 0.15177767,
+        "uri": "nyt://article/79097769-5a9f-58b0-88a9-47cd65a62747"
+      },
+      {
+        "web_url": "https://www.nytimes.com/aponline/2017/10/17/us/ap-us-trump-the-fallen-vignettes.html",
+        "snippet": "The Associated Press spoke Tuesday with family members who have lost loved ones in U.S. military operations and asked them about their interactions, if any, with the president at the time &#8212; George W. Bush, Barack Obama or Donald Trump.",
+        "blog": {},
+        "source": "AP",
+        "multimedia": [],
+        "headline": {
+          "main": "Families of the Fallen, and Their Presidents",
+          "print_headline": "Families of the Fallen, and Their Presidents"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-18T00:24:47+0000",
+        "document_type": "article",
+        "new_desk": "None",
+        "byline": {
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "type_of_material": "News",
+        "_id": "59e69f5895d0e0246f2109cd",
+        "word_count": 1786,
+        "score": 0.21563955,
+        "uri": "nyt://article/7dc95a33-2681-5216-a350-f6439fa6b3fe"
+      },
+      {
+        "web_url": "https://www.nytimes.com/2017/10/17/learning/lesson-plans/text-to-text-life-on-mars-and-ray-bradburys-all-summer-in-a-day.html",
+        "snippet": "We pair a Times 360 video series about a Mars simulation with Bradbury’s short story to explore potential sacrifices required in pursuit of scientific discovery.",
+        "blog": {},
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "type": "image",
+            "subtype": "xlarge",
+            "url": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-articleLarge.jpg",
+            "height": 396,
+            "width": 600,
+            "rank": 0,
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-articleLarge.jpg",
+              "xlargeheight": 396
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "wide",
+            "url": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-thumbWide.jpg",
+            "height": 126,
+            "width": 190,
+            "rank": 0,
+            "legacy": {
+              "wide": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "thumbnail",
+            "url": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-thumbStandard.jpg",
+            "height": 75,
+            "width": 75,
+            "rank": 0,
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/04/29/science/29tb-mars_promo-LN-lifeonmars/29tb-mars_promo-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            }
+          }
+        ],
+        "headline": {
+          "main": "Text to Text | “Life on Mars” and Ray Bradbury’s “All Summer in a Day”",
+          "print_headline": "Text to Text | “Life on Mars” and Ray Bradbury’s “All Summer in a Day”"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-18T00:19:55+0000",
+        "document_type": "article",
+        "new_desk": "Learning",
+        "section_name": "Lesson Plans",
+        "byline": {
+          "original": "By BROOKE MACKIN"
+        },
+        "type_of_material": "News",
+        "_id": "59e69e3695d0e0246f2109cc",
+        "word_count": 3122,
+        "score": 0.08206039,
+        "uri": "nyt://article/a8ea1961-571e-517b-92f3-7166b0c417db"
+      },
+      {
+        "web_url": "https://www.nytimes.com/reuters/2017/10/17/world/europe/17reuters-usa-cyber-russia-senate.html",
+        "snippet": "A U.S. senator on Tuesday asked the Defense Department to explain how it manages the risks when it uses software that has been scrutinized by foreign governments, saying the practice may represent a national security threat.",
+        "blog": {},
+        "source": "Reuters",
+        "multimedia": [],
+        "headline": {
+          "main": "U.S. Senator Probes Pentagon on Russian Source Code Reviews",
+          "print_headline": "U.S. Senator Probes Pentagon on Russian Source Code Reviews"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-18T00:09:31+0000",
+        "document_type": "article",
+        "new_desk": "None",
+        "section_name": "Europe",
+        "byline": {
+          "original": "By REUTERS"
+        },
+        "type_of_material": "News",
+        "_id": "59e69bc195d0e0246f2109c8",
+        "word_count": 583,
+        "score": 0.11465432,
+        "uri": "nyt://article/9e4016f7-b084-5278-af67-33c1fe883598"
+      },
+      {
+        "web_url": "https://www.nytimes.com/aponline/2017/10/17/us/politics/ap-us-trump-heritage-the-latest.html",
+        "snippet": "The Latest on President Donald Trump's speech to the conservative Heritage Foundation (all times EDT):",
+        "blog": {},
+        "source": "AP",
+        "multimedia": [],
+        "headline": {
+          "main": "The Latest: Trump Says US Should Not Tear Down History",
+          "print_headline": "The Latest: Trump Says US Should Not Tear Down History"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-17T23:51:47+0000",
+        "document_type": "article",
+        "new_desk": "None",
+        "section_name": "Politics",
+        "byline": {
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "type_of_material": "News",
+        "_id": "59e697b195d0e0246f2109c5",
+        "word_count": 247,
+        "score": 1.1713964,
+        "uri": "nyt://article/05458cf0-bc5c-5dd1-b17c-aeff7dfe3127"
+      },
+      {
+        "web_url": "https://www.nytimes.com/2017/10/17/us/politics/bipartisan-criminal-justice-overhaul-trump.html",
+        "snippet": "Some of the nation’s most prominent prosecutors, police chiefs and criminal justice overhaul advocates are expected to urge President Trump to change his policies on policing and criminality.",
+        "print_page": "16",
+        "blog": {},
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "type": "image",
+            "subtype": "xlarge",
+            "url": "images/2017/10/18/us/18dc-justice1/18dc-justice1-articleLarge.jpg",
+            "height": 391,
+            "width": 600,
+            "rank": 0,
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/10/18/us/18dc-justice1/18dc-justice1-articleLarge.jpg",
+              "xlargeheight": 391
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "wide",
+            "url": "images/2017/10/18/us/18dc-justice1/18dc-justice1-thumbWide.jpg",
+            "height": 126,
+            "width": 190,
+            "rank": 0,
+            "legacy": {
+              "wide": "images/2017/10/18/us/18dc-justice1/18dc-justice1-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "thumbnail",
+            "url": "images/2017/10/18/us/18dc-justice1/18dc-justice1-thumbStandard.jpg",
+            "height": 75,
+            "width": 75,
+            "rank": 0,
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/10/18/us/18dc-justice1/18dc-justice1-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            }
+          }
+        ],
+        "headline": {
+          "main": "Bipartisan Group Plans to Urge Trump to Adjust Policing Policies",
+          "print_headline": "Bipartisan Group Plans to Urge Trump and Sessions to Adjust Policing Policies"
+        },
+        "keywords": [
+          {
+            "isMajor": "N",
+            "rank": 1,
+            "name": "subject",
+            "value": "United States Politics and Government"
+          },
+          {
+            "isMajor": "N",
+            "rank": 2,
+            "name": "subject",
+            "value": "Crime and Criminals"
+          },
+          {
+            "isMajor": "N",
+            "rank": 3,
+            "name": "subject",
+            "value": "Law and Legislation"
+          },
+          {
+            "isMajor": "N",
+            "rank": 4,
+            "name": "subject",
+            "value": "Police"
+          },
+          {
+            "isMajor": "N",
+            "rank": 5,
+            "name": "subject",
+            "value": "Mandatory Sentencing"
+          },
+          {
+            "isMajor": "N",
+            "rank": 6,
+            "name": "subject",
+            "value": "Drug Abuse and Traffic"
+          },
+          {
+            "isMajor": "N",
+            "rank": 7,
+            "name": "subject",
+            "value": "Pain-Relieving Drugs"
+          },
+          {
+            "isMajor": "N",
+            "rank": 8,
+            "name": "subject",
+            "value": "Attorneys General"
+          },
+          {
+            "isMajor": "N",
+            "rank": 9,
+            "name": "subject",
+            "value": "Police Brutality, Misconduct and Shootings"
+          },
+          {
+            "isMajor": "N",
+            "rank": 10,
+            "name": "organizations",
+            "value": "Justice Department"
+          },
+          {
+            "isMajor": "N",
+            "rank": 11,
+            "name": "glocations",
+            "value": "United States"
+          },
+          {
+            "isMajor": "N",
+            "rank": 12,
+            "name": "persons",
+            "value": "Holder, Eric H Jr"
+          },
+          {
+            "isMajor": "N",
+            "rank": 13,
+            "name": "persons",
+            "value": "Trump, Donald J"
+          },
+          {
+            "isMajor": "N",
+            "rank": 14,
+            "name": "persons",
+            "value": "Sessions, Jefferson B III"
+          }
+        ],
+        "pub_date": "2017-10-17T23:47:01+0000",
+        "document_type": "article",
+        "new_desk": "Washington",
+        "section_name": "Politics",
+        "byline": {
+          "original": "By MAGGIE HABERMAN"
+        },
+        "type_of_material": "News",
+        "_id": "59e6967f95d0e0246f2109c2",
+        "word_count": 702,
+        "score": 1.0092906,
+        "uri": "nyt://article/e3d1121e-77df-5916-ad8a-7061b5ac2c0f"
+      },
+      {
+        "web_url": "https://www.nytimes.com/2017/10/17/sports/football/nfl-anthem-protests-trump.html",
+        "snippet": "The owners on Tuesday opted not to rewrite regulations to require standing for the anthem and met for hours with players to discuss supporting social causes.",
+        "blog": {},
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "type": "image",
+            "subtype": "xlarge",
+            "url": "images/2017/10/18/sports/18nflweb1/18nflweb1-articleLarge.jpg",
+            "height": 400,
+            "width": 600,
+            "rank": 0,
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/10/18/sports/18nflweb1/18nflweb1-articleLarge.jpg",
+              "xlargeheight": 400
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "wide",
+            "url": "images/2017/10/18/sports/18nflweb1/18nflweb1-thumbWide.jpg",
+            "height": 126,
+            "width": 190,
+            "rank": 0,
+            "legacy": {
+              "wide": "images/2017/10/18/sports/18nflweb1/18nflweb1-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "thumbnail",
+            "url": "images/2017/10/18/sports/18nflweb1/18nflweb1-thumbStandard.jpg",
+            "height": 75,
+            "width": 75,
+            "rank": 0,
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/10/18/sports/18nflweb1/18nflweb1-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            }
+          }
+        ],
+        "headline": {
+          "main": "N.F.L. Owners Won’t Penalize Players for Kneeling During Anthem",
+          "print_headline": "N.F.L. Owners  Take a Knee On Protests"
+        },
+        "keywords": [
+          {
+            "isMajor": "N",
+            "rank": 1,
+            "name": "subject",
+            "value": "United States National Anthem Protests (2016- )"
+          },
+          {
+            "isMajor": "N",
+            "rank": 2,
+            "name": "subject",
+            "value": "Football"
+          },
+          {
+            "isMajor": "N",
+            "rank": 3,
+            "name": "subject",
+            "value": "Race and Ethnicity"
+          },
+          {
+            "isMajor": "N",
+            "rank": 4,
+            "name": "organizations",
+            "value": "National Football League"
+          },
+          {
+            "isMajor": "N",
+            "rank": 5,
+            "name": "persons",
+            "value": "Kaepernick, Colin"
+          },
+          {
+            "isMajor": "N",
+            "rank": 6,
+            "name": "persons",
+            "value": "Goodell, Roger"
+          }
+        ],
+        "pub_date": "2017-10-17T23:46:55+0000",
+        "document_type": "article",
+        "new_desk": "Sports",
+        "section_name": "Pro Football",
+        "byline": {
+          "original": "By KEN BELSON and KEVIN DRAPER"
+        },
+        "type_of_material": "News",
+        "_id": "59e6967f95d0e0246f2109c1",
+        "word_count": 1128,
+        "score": 0.076937966,
+        "uri": "nyt://article/2a55be87-e387-57b7-89ba-d379a76f7611"
+      },
+      {
+        "web_url": "https://www.nytimes.com/aponline/2017/10/17/us/politics/ap-us-trump-heritage.html",
+        "snippet": "President Donald Trump is taking his tax plan sales pitch to the conservative Heritage Foundation.",
+        "blog": {},
+        "source": "AP",
+        "multimedia": [],
+        "headline": {
+          "main": "Trump Taking Tax Pitch to Conservative Think Tank",
+          "print_headline": "Trump Taking Tax Pitch to Conservative Think Tank"
+        },
+        "keywords": [],
+        "pub_date": "2017-10-17T23:31:13+0000",
+        "document_type": "article",
+        "new_desk": "None",
+        "section_name": "Politics",
+        "byline": {
+          "original": "By THE ASSOCIATED PRESS"
+        },
+        "type_of_material": "News",
+        "_id": "59e692cd95d0e0246f2109be",
+        "word_count": 120,
+        "score": 1.1608343,
+        "uri": "nyt://article/6aa1ce10-1cd7-57c5-8c9f-5f3f34df5dfc"
+      },
+      {
+        "web_url": "https://www.nytimes.com/2017/10/17/us/politics/nafta-negotiators-extend-talks-delaying-its-expected-demise.html",
+        "snippet": "The extension of the trade talks leaves a narrow and challenging path to rewriting the pact.",
+        "blog": {},
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "type": "image",
+            "subtype": "xlarge",
+            "url": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-articleLarge.jpg",
+            "height": 389,
+            "width": 600,
+            "rank": 0,
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-articleLarge.jpg",
+              "xlargeheight": 389
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "wide",
+            "url": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-thumbWide.jpg",
+            "height": 126,
+            "width": 190,
+            "rank": 0,
+            "legacy": {
+              "wide": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            }
+          },
+          {
+            "type": "image",
+            "subtype": "thumbnail",
+            "url": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-thumbStandard.jpg",
+            "height": 75,
+            "width": 75,
+            "rank": 0,
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/10/18/business/18DC-NAFTA2/18DC-NAFTA2-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            }
+          }
+        ],
+        "headline": {
+          "main": "Nafta Negotiators Extend Talks, Delaying Its Potential Demise",
+          "print_headline": "Extension of Nafta Talks May Only Painfully Delay the Expected"
+        },
+        "keywords": [
+          {
+            "isMajor": "N",
+            "rank": 1,
+            "name": "subject",
+            "value": "United States Politics and Government"
+          }
+        ],
+        "pub_date": "2017-10-17T23:29:10+0000",
+        "document_type": "article",
+        "new_desk": "Business",
+        "section_name": "Politics",
+        "byline": {
+          "original": "By ANA SWANSON"
+        },
+        "type_of_material": "News",
+        "_id": "59e6924d95d0e0246f2109b9",
+        "word_count": 1212,
+        "score": 0.20576438,
+        "uri": "nyt://article/f0c87047-a75c-5569-ae40-5d173c6218fa"
+      }
+    ],
+    "meta": {
+      "hits": 65149,
+      "offset": 0,
+      "time": 24
+    }
+  }
+}
