@@ -19,24 +19,28 @@
 ---
 #### Requirements
 * [x]Include **at least 1 prototypes**
-* [ ]Hit at least one news-based API
-* [ ]Allow the user to browse through news articles using an interface that is photo-based, rather than text-based
-* [x]Allow the user to click on a photo and read the article to which the photo relates
-* [ ]Provide the user with some mechanism by which to filter stories based on one or more of the following:
- * [ ]Keywords
- * [ ]Tags
- * [ ]Topics
- * [ ]Location
-* [ ]Integrate with the Twitter and/or Facebook's APIs
- * [ ]Allow the user to share individual photos and stories via social media
-* [ ]Look great in both landscape and portrait modes and reflect Material Design principles
-* [ ]Not crash or hang and should handle for when networking/internet is slow or unavailable
+* [x]Hit at least one news-based API
+* [ ]Photo-based, rather than text-based
+* Allow the user to click on a photo and read the article to which the photo relates
+ * [x]Open article in Safari
+ * [ ]Show detail view
+* Provide the user with some mechanism by which to filter stories based on one or more of the following:
+ * [x]Keywords
+ * Tags (optional)
+ * Topics (optional)
+ * Location (optional)
+* Integrate with the Twitter and/or Facebook's APIs
+ * [ ] share individual photos
+ * [ ] share stories
+* [ ]Look great in both landscape and portrait and reflect Material Design principles
+* [x] does not hang
+* [ ] does not crash
 * [ ]Include at least one Notifications feature (e.g. reminder, alarm)
 * [x]Use Auto Layout
 * [x]Use a tableview pattern
 * [x]Use custom tableviews with custom tableview cell classes
 * [ ]Have smooth transitions and fade in/fade out animation
-* [ ]Run on your own device
+* [x]Run on your own device
 
 **Bonus:**
 
