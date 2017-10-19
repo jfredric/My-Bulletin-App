@@ -29,8 +29,6 @@
 		EFC80D391F8BF2AA00B0E0CA /* NewsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D381F8BF2AA00B0E0CA /* NewsAPITests.swift */; };
 		EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */; };
 		EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */; };
-		EFC80D501F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */; };
-		EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */; };
 		EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD781E81F952245004F93DC /* CnnNewsAPI.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,8 +65,6 @@
 		EFC80D3A1F8BF2AA00B0E0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoryTableViewCell.swift; sourceTree = "<group>"; };
-		EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		EFD781E81F952245004F93DC /* CnnNewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CnnNewsAPI.swift; sourceTree = "<group>"; };
 		EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickerTableViewController.swift; path = "Feedr Reader/PickerTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EFF9DBD41F951A9400853AF8 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickerTableViewCell.swift; path = "Feedr Reader/PickerTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
@@ -99,9 +95,7 @@
 			children = (
 				EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */,
 				EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */,
-				EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */,
 				EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */,
-				EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFF9DBD41F951A9400853AF8 /* PickerTableViewCell.swift */,
 				EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */,
@@ -301,12 +295,10 @@
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
 				EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */,
 				EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */,
-				EFC80D501F8C8F7300B0E0CA /* SearchTableViewCell.swift in Sources */,
 				EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */,
 				EF8CC96A1F980B8D00D8CBCB /* OldSearchTableViewCell.swift in Sources */,
 				EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */,
 				EF75ED071F951CCD001B1078 /* NewsStory.swift in Sources */,
-				EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
 				EF8CC95C1F95BC6500D8CBCB /* NewsAPI.swift in Sources */,
 				EF8CC9701F9830EA00D8CBCB /* SearchViewController.swift in Sources */,
 			);

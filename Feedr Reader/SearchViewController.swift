@@ -21,6 +21,18 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     // MARK: SEARCH BAR functions
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         NewsData.sharedInstance.search(forString: searchBar.text ?? "")
+        searchBar.showsCancelButton = false
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
     }
     
     // MARK: TABLEVIEW FUNCTIONS

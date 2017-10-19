@@ -13,48 +13,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Table View Controller-->
-        <scene sceneID="Qzg-GH-CUA">
-            <objects>
-                <tableViewController id="jCK-eD-BwV" userLabel="Search Table View Controller" customClass="SearchTableViewController" customModule="Feedr_Reader" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aMY-IA-bcC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" showsScopeBar="YES" id="APK-Ie-D2f">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <scopeButtonTitles>
-                                <string>Title</string>
-                                <string>Title</string>
-                            </scopeButtonTitles>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="cQT-e5-uej">
-                                <rect key="frame" x="0.0" y="84" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQT-e5-uej" id="YVs-qW-Oa6">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="jCK-eD-BwV" id="BBB-sq-VkO"/>
-                            <outlet property="delegate" destination="jCK-eD-BwV" id="BlJ-gP-QfR"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Old Search" image="tabicon-search" id="TQl-2o-Iwe" userLabel="Old Search"/>
-                    <connections>
-                        <outlet property="searchBar" destination="APK-Ie-D2f" id="xSG-Hh-ZgD"/>
-                        <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromSearch-ID" id="6dN-Da-1gc"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AwO-Gu-2YV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1155" y="715"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="U2O-dW-E76">
             <objects>
@@ -129,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUK-AG-WSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="714"/>
+            <point key="canvasLocation" x="1926" y="713"/>
         </scene>
         <!--Feed Table View Controller-->
         <scene sceneID="Sr2-tA-FHS">
@@ -359,11 +317,12 @@
                     <connections>
                         <outlet property="searchBar" destination="rjN-wO-E2E" id="CqG-cK-ede"/>
                         <outlet property="tableView" destination="eEx-TZ-0qa" id="IdO-Zr-q1D"/>
+                        <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromSearch-ID" id="GSC-tP-0Bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfR-rp-SEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="713"/>
+            <point key="canvasLocation" x="1155" y="713"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ogj-cn-IJZ">
@@ -376,7 +335,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="yqF-Yc-Mcs" kind="relationship" relationship="viewControllers" id="Qy3-Ei-1mk"/>
-                        <segue destination="jCK-eD-BwV" kind="relationship" relationship="viewControllers" id="Y75-SX-62I"/>
                         <segue destination="tfL-p3-mnn" kind="relationship" relationship="viewControllers" id="wps-hD-Eio"/>
                         <segue destination="hgk-Vb-pi6" kind="relationship" relationship="viewControllers" id="3bi-zg-qCL"/>
                     </connections>
@@ -411,6 +369,6 @@
         <image name="tabicon-settings" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6dN-Da-1gc"/>
+        <segue reference="GSC-tP-0Bb"/>
     </inferredMetricsTieBreakers>
 </document>
