@@ -22,16 +22,16 @@
 * [x] Hit at least one news-based API
 * [ ] Photo-based, rather than text-based
 * Allow the user to click on a photo and read the article to which the photo relates
- * [x] Open article in Safari
- * [ ] Show detail view
+  * [x] Open article in Safari
+  * [ ] Show detail view
 * Provide the user with some mechanism by which to filter stories based on one or more of the following:
- * [x] Keywords
- * Tags (optional)
- * Topics (optional)
- * Location (optional)
+  * [x] Keywords
+  * Tags (optional)
+  * Topics (optional)
+  * Location (optional)
 * Integrate with the Twitter and/or Facebook's APIs
- * [ ] share individual photos
- * [ ] share stories
+  * [ ] share individual photos
+  * [ ] share stories
 * [ ] Look great in both landscape and portrait and reflect Material Design principles
 * [x] does not hang
 * [ ] does not crash
