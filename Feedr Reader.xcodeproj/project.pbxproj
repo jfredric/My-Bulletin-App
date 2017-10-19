@@ -11,6 +11,7 @@
 		EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */; };
 		EF2F5EC21F987DA200536B16 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */; };
 		EF2F5EC31F987DA200536B16 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */; };
+		EF2F5EC51F9911CF00536B16 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC41F9911CF00536B16 /* Alerts.swift */; };
 		EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD61F951AB100853AF8 /* ArticleWebViewController.swift */; };
 		EF75ECFE1F951BA6001B1078 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */; };
 		EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */; };
@@ -48,6 +49,7 @@
 		EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		EF2F5EC41F9911CF00536B16 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		EF75ED061F951CCD001B1078 /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
 		EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 		EF8CC95D1F96479600D8CBCB /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8CC9611F96778200D8CBCB /* Network.swift */,
+				EF2F5EC41F9911CF00536B16 /* Alerts.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				EF8CC9601F966EEF00D8CBCB /* NytNewsAPI.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
 				EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */,
+				EF2F5EC51F9911CF00536B16 /* Alerts.swift in Sources */,
 				EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */,
 				EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */,
 				EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */,

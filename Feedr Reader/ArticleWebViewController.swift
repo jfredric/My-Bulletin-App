@@ -50,6 +50,14 @@ class ArticleWebViewController: UIViewController, UINavigationControllerDelegate
     // MARK: ACTIONS
     
     @IBAction func shareButtonTapped(_ sender: Any) {
+        //Alerts.shareText(text: "Test Content", from: self)
+        var storyContent: [Any] = []
+        storyContent.append(newsStory!.headline)
+        storyContent.append(newsStory!.storyURL)
+        if newsStory!.image != nil {
+            storyContent.append(newsStory!.image)
+        }
+        Alerts.shareContent(storyContent, from: self)
     }
     
     // open link in safari to article

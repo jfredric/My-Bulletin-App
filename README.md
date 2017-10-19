@@ -29,9 +29,9 @@
   * Tags (optional)
   * Topics (optional)
   * Location (optional)
-* Integrate with the Twitter and/or Facebook's APIs
+* Share to social media
   * [ ] share individual photos
-  * [ ] share stories
+  * [x] share stories
 * [ ] Look great in both landscape and portrait and reflect Material Design principles
 * [x] does not hang
 * [ ] does not crash
@@ -44,7 +44,7 @@
 
 **Bonus:**
 
-* [ ] Integrate additional APIs
+* [ ] Integrate with the Twitter and/or Facebook's APIs
 * [ ] Allow the user to download photos, manipulate them by adding text, etc. (image manipulation libraries will probably be helpful here...) and then share their manipulated image via social media
 * [x] Create multiple prototype cells to use in your app
 

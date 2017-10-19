@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+import SystemConfiguration
 
 enum NetworkErrors: Error {
     case badlyFormatedURL
+    case noInternet
+    case timeout
 }
 
-struct Network {
+class Network {
     
     static func downloadImage(urlString: String) -> UIImage? {
         let url = try! safeURL(from: urlString)
@@ -32,6 +35,11 @@ struct Network {
             throw NetworkErrors.badlyFormatedURL
         }
         return requestedURL
+    }
+    
+    static func isConnectedToInternet() -> Bool {
+        
+        return false
     }
 }
 
