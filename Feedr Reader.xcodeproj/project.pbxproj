@@ -21,6 +21,7 @@
 		EF8CC96A1F980B8D00D8CBCB /* OldSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC9681F980B8D00D8CBCB /* OldSearchTableViewCell.swift */; };
 		EF8CC96B1F980B8D00D8CBCB /* OldSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8CC9691F980B8D00D8CBCB /* OldSearchTableViewCell.xib */; };
 		EF8CC96E1F980ED400D8CBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8CC96C1F980BE600D8CBCB /* Main.storyboard */; };
+		EF8CC9701F9830EA00D8CBCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */; };
 		EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */; };
 		EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFC80D271F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld */; };
 		EFC80D2B1F8BF2A900B0E0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC80D2A1F8BF2A900B0E0CA /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		EF8CC9681F980B8D00D8CBCB /* OldSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSearchTableViewCell.swift; sourceTree = "<group>"; };
 		EF8CC9691F980B8D00D8CBCB /* OldSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldSearchTableViewCell.xib; sourceTree = "<group>"; };
 		EF8CC96D1F980BE600D8CBCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EFC80D1D1F8BF2A900B0E0CA /* Feedr Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feedr Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC80D281F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Feedr_Reader.xcdatamodel; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */,
 				EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */,
 				EFC80D521F8C8F9C00B0E0CA /* SearchTableViewController.swift */,
+				EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */,
 				EFC80D4F1F8C8F7300B0E0CA /* SearchTableViewCell.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFF9DBD41F951A9400853AF8 /* PickerTableViewCell.swift */,
@@ -305,6 +308,7 @@
 				EF75ED071F951CCD001B1078 /* NewsStory.swift in Sources */,
 				EFC80D531F8C8F9C00B0E0CA /* SearchTableViewController.swift in Sources */,
 				EF8CC95C1F95BC6500D8CBCB /* NewsAPI.swift in Sources */,
+				EF8CC9701F9830EA00D8CBCB /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

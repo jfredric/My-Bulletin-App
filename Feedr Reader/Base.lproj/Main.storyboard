@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,7 +31,7 @@
                             </scopeButtonTitles>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cQT-e5-uej">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="cQT-e5-uej">
                                 <rect key="frame" x="0.0" y="84" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQT-e5-uej" id="YVs-qW-Oa6">
@@ -44,7 +45,7 @@
                             <outlet property="delegate" destination="jCK-eD-BwV" id="BlJ-gP-QfR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" image="tabicon-search" id="TQl-2o-Iwe"/>
+                    <tabBarItem key="tabBarItem" title="Old Search" image="tabicon-search" id="TQl-2o-Iwe" userLabel="Old Search"/>
                     <connections>
                         <outlet property="searchBar" destination="APK-Ie-D2f" id="xSG-Hh-ZgD"/>
                         <segue destination="2JW-E5-Ngk" kind="show" identifier="showArticleFromSearch-ID" id="6dN-Da-1gc"/>
@@ -128,7 +129,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUK-AG-WSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952" y="713"/>
+            <point key="canvasLocation" x="2741" y="714"/>
         </scene>
         <!--Feed Table View Controller-->
         <scene sceneID="Sr2-tA-FHS">
@@ -308,6 +309,62 @@
             </objects>
             <point key="canvasLocation" x="1641" y="1496"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="yuQ-Xc-uX9">
+            <objects>
+                <viewController id="tfL-p3-mnn" userLabel="Search View Controller" customClass="SearchViewController" customModule="Feedr_Reader" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7c5-6m-Ycq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvV-35-98a" userLabel="Search View">
+                                <rect key="frame" x="0.0" y="20" width="320" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rjN-wO-E2E">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rjN-wO-E2E" firstAttribute="top" secondItem="mvV-35-98a" secondAttribute="top" id="1jq-M4-CN4"/>
+                                    <constraint firstItem="rjN-wO-E2E" firstAttribute="centerY" secondItem="mvV-35-98a" secondAttribute="centerY" id="2PK-cC-iHh"/>
+                                    <constraint firstAttribute="bottom" secondItem="rjN-wO-E2E" secondAttribute="bottom" id="744-Io-L7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="rjN-wO-E2E" secondAttribute="trailing" id="7op-44-Qmb"/>
+                                    <constraint firstItem="rjN-wO-E2E" firstAttribute="leading" secondItem="mvV-35-98a" secondAttribute="leading" id="umw-AC-s3n"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eEx-TZ-0qa" userLabel="Search Table View">
+                                <rect key="frame" x="0.0" y="76" width="320" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tfL-p3-mnn" id="163-Dk-tv6"/>
+                                    <outlet property="delegate" destination="tfL-p3-mnn" id="oNk-dB-cFN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mvV-35-98a" firstAttribute="top" secondItem="Jlr-t6-CZS" secondAttribute="top" id="EfS-qh-PAw"/>
+                            <constraint firstItem="Jlr-t6-CZS" firstAttribute="trailing" secondItem="eEx-TZ-0qa" secondAttribute="trailing" id="O6h-bp-7cv"/>
+                            <constraint firstItem="mvV-35-98a" firstAttribute="leading" secondItem="Jlr-t6-CZS" secondAttribute="leading" id="Y7V-30-Jkd"/>
+                            <constraint firstItem="eEx-TZ-0qa" firstAttribute="leading" secondItem="Jlr-t6-CZS" secondAttribute="leading" id="aKE-bh-vzQ"/>
+                            <constraint firstItem="eEx-TZ-0qa" firstAttribute="top" secondItem="mvV-35-98a" secondAttribute="bottom" id="b9a-gZ-Aok"/>
+                            <constraint firstItem="Jlr-t6-CZS" firstAttribute="bottom" secondItem="eEx-TZ-0qa" secondAttribute="bottom" id="hQK-jb-J2S"/>
+                            <constraint firstItem="Jlr-t6-CZS" firstAttribute="trailing" secondItem="mvV-35-98a" secondAttribute="trailing" id="w7v-MZ-JAD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jlr-t6-CZS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="tabicon-search" id="tc6-X8-fW1" userLabel="New Search"/>
+                    <connections>
+                        <outlet property="searchBar" destination="rjN-wO-E2E" id="CqG-cK-ede"/>
+                        <outlet property="tableView" destination="eEx-TZ-0qa" id="IdO-Zr-q1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfR-rp-SEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="713"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ogj-cn-IJZ">
             <objects>
@@ -320,6 +377,7 @@
                     <connections>
                         <segue destination="yqF-Yc-Mcs" kind="relationship" relationship="viewControllers" id="Qy3-Ei-1mk"/>
                         <segue destination="jCK-eD-BwV" kind="relationship" relationship="viewControllers" id="Y75-SX-62I"/>
+                        <segue destination="tfL-p3-mnn" kind="relationship" relationship="viewControllers" id="wps-hD-Eio"/>
                         <segue destination="hgk-Vb-pi6" kind="relationship" relationship="viewControllers" id="3bi-zg-qCL"/>
                     </connections>
                 </tabBarController>
@@ -353,6 +411,6 @@
         <image name="tabicon-settings" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xfF-zX-ASN"/>
+        <segue reference="6dN-Da-1gc"/>
     </inferredMetricsTieBreakers>
 </document>

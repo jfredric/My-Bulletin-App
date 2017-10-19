@@ -73,6 +73,7 @@ class NewsData {
         
         // Call API's to fetch data
         // sources.append(NytNewsAPI.sharedInstance)
+        searchResults = []
         var searchString: String? = forString
         if forString == "" {
             searchString = nil
