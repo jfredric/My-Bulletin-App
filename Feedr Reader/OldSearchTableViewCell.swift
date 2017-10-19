@@ -1,18 +1,15 @@
 //
-//  SearchTableViewCell.swift
+//  OldSearchTableViewCell.swift
 //  Feedr Reader
 //
-//  Created by Joshua Fredrickson on 10/9/17.
+//  Created by Joshua Fredrickson on 10/18/17.
 //  Copyright © 2017 Joshua Fredrickson. All rights reserved.
 //
 
 import UIKit
 
-class SearchTableViewCell: UITableViewCell {
+class OldSearchTableViewCell: UITableViewCell {
 
-    //@IBOutlet weak var keywordsTextField: UITextField!
-    //@IBOutlet weak var tagsTextField: UITextField!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +20,5 @@ class SearchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

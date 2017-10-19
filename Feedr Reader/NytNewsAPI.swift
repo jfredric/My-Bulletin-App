@@ -17,6 +17,7 @@ class NytNewsAPI: NewsAPI {
     private let apiKey = "6745696533b04c17a90c215f1106f56b" //cnn
     private let searchEndPoint = "https://api.nytimes.com/svc/search/v2/articlesearch.json?"
     private let topStoriesEndPoint = "https://api.nytimes.com/svc/topstories/v2/home.json?"
+    private let staticContentEndPoint = "https://static01.nyt.com/"
     
     // parameter keywords
     private let paramAPIKey = "api-key="
@@ -28,6 +29,7 @@ class NytNewsAPI: NewsAPI {
     }
     
     // JSON RootKeys
+    private let keyMessage = "message"
     private let keyStatus = "status"
     private let keyNumResults = "num_results"
     private let keyResults = "results"
@@ -36,7 +38,7 @@ class NytNewsAPI: NewsAPI {
     
     // JSON Search Keys
     private let keySearchURL = "web_url"
-    private let keySearchDescription = "snippit"
+    private let keySearchDescription = "snippet"
     private let keySearchHeadline = "headline"
     private let keySearchHeadline_main = "main"
     private let keySearchDate = "pub_date"
@@ -106,12 +108,28 @@ class NytNewsAPI: NewsAPI {
                     // Serialize Json....
                     let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:AnyObject]
                     
+                    //print("JSON-Object:",jsonObject)
+                    if let message = jsonObject[self.keyMessage] as! String? {
+                        print("search request message:",message)
+                    }
+                    
+                    if let status = jsonObject[self.keyStatus] as! String? {
+                        if status != "OK" {
+                            print("json serilization failed with \(status)")
+                        }
+                    } else {
+                        print("status not found")
+                        return
+                    }
                     
                     let response = jsonObject[self.keyResponse] as! [String:AnyObject]
+                   // print("JSON-RESPONSE:",response)
                     let docs = response[self.keyDocs] as! [[String:AnyObject]]
+                    //print("JSON-docs:",docs)
                     for article in docs {
+                        //print("JSON-ARTICLE:",article)
                         let url = article[self.keySearchURL] as! String
-                        let description = article[self.keySearchDescription] as! String
+                        let description = (article[self.keySearchDescription] as! String?) ?? ""
                         let headlineDict = article[self.keySearchHeadline] as! [String:String]
                         let headline = headlineDict[self.keySearchHeadline_main]
                         let media = article[self.keySearchImages] as! [[String:AnyObject]]
@@ -119,8 +137,15 @@ class NytNewsAPI: NewsAPI {
                         let newStory = NewsStory(headline: headline!, description: description, url: url)
                         
                         if media.count != 0 {
-                            newStory.imageURL = media[0][self.keySearchImageURL] as? String
-                            newStory.downloadImage()
+                            let relativeURL = media[0][self.keySearchImageURL] as? String
+                            if relativeURL != nil {
+                                newStory.imageURL = self.staticContentEndPoint + relativeURL!
+                                newStory.downloadImage()
+                            } else {
+                                print("image url not found")
+                            }
+                        } else {
+                            print("no images available for: \(url)")
                         }
                         
                         stories.append(newStory)
@@ -190,7 +215,7 @@ class NytNewsAPI: NewsAPI {
                                 //print("checking image:",imageFormat)
                                 if imageFormat == NytNewsAPI.valueMedia.normal {
                                     bestImageURL = image[self.keyImageURL] as! String
-                                    print("using normal image")
+                                    //print("using normal image")
                                     break
                                 } else {
                                     let imageHeight = image[self.keyImageHeight] as! Int

@@ -8,8 +8,20 @@
 
 import UIKit
 
-class SearchTableViewController: UITableViewController {
 
+class SearchTableViewController: UITableViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    // MARK: ACTIONS
+   
+    
+    // MARK: SEARCH BAR functions
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        NewsData.sharedInstance.search(forString: searchBar.text ?? "")
+    }
+    
+    // MARK: TABLEVIEW FUNCTIONS
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,8 +31,18 @@ class SearchTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        // Register prototype cell nibs
         tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
+        
+        // set up the search controller
+        searchBar.delegate = self
+        
+        NewsData.sharedInstance.setSearchCallBack {
+            self.tableView.reloadData()
+            print("refreshing tableview")
+        }
+        NewsData.sharedInstance.search(forString: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,29 +59,28 @@ class SearchTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return NewsData.sharedInstance.searchCount
     }
 
     
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /*if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell-ID", for: indexPath) as! SearchTableViewCell
             return cell
-        } else { // alternate between left and right image aligned versions of the small story cell
+        } else {*/ // alternate between left and right image aligned versions of the small story cell
+            let story = NewsData.sharedInstance.getSearchStory(at: indexPath.row)
+            var reuseID: String
             if indexPath.row % 2 == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "rightStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
-                cell.storyHeadlineLabel.text = "Stories aligned to the right"
-                cell.storyDescriptionLabel.text = "bla bla bla bla"
-                //set image here
-                return cell
+                reuseID = "rightStoryTableViewCell-ID"
             } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "leftStoryTableViewCell-ID", for: indexPath) as! SmallStoryTableViewCell
-                cell.storyHeadlineLabel.text = "Stories aligned to the left"
-                cell.storyDescriptionLabel.text = "bla bla bla bla"
-                //set image here
-                return cell
+               reuseID = "leftStoryTableViewCell-ID"
             }
-        }
+            let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
+            cell.storyHeadlineLabel.text = story.headline
+            cell.storyDescriptionLabel.text = story.description
+            cell.storyImageView.image = story.image
+            return cell
+        //}
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
