@@ -23,7 +23,7 @@
 * [ ] Photo-based, rather than text-based
 * Allow the user to click on a photo and read the article to which the photo relates
   * [x] Open article in Safari
-  * [ ] Show detail view
+  * [x] Show detail view
 * Provide the user with some mechanism by which to filter stories based on one or more of the following:
   * [x] Keywords
   * Tags (optional)
