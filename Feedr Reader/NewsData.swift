@@ -21,21 +21,27 @@ class NewsData {
     private var updateFeedView: (() -> Void)? //update callback
     private var updateSearchView: (() -> Void)? //update callback for search
     
+    // MARK: Singleton
     static let sharedInstance = NewsData()
-    private init() {}
+    private init() {
+        sources.append(NytNewsAPI.sharedInstance)
+    }
     
+    // MARK: Table functions
+    
+    // Count
     public var topCount: Int {
         get {
             return topStories.count
         }
     }
-    
     public var searchCount: Int {
         get {
             return searchResults.count
         }
     }
     
+    // Index
     func getTopStory(at: Int) -> NewsStory {
         return topStories[at]
     }
@@ -44,6 +50,7 @@ class NewsData {
         return searchResults[at]
     }
     
+    // initializing the call backs to update the table views
     func setFeedCallBack(with callback: @escaping () -> Void) {
         updateFeedView = callback
     }
@@ -52,10 +59,28 @@ class NewsData {
         updateSearchView = callback
     }
     
-    func loadInitialData() {
+    // are we still getting data for top stories
+    func isRequestingTop() -> Bool {
+        for source in sources {
+            if !source.isRequestingTop() {
+                return false
+            }
+        }
+        return true
+    }
+    
+    // are we still getting data for top stories
+    func isRequestingSearchResults() -> Bool {
+        for source in sources {
+            if source.isRequestingSearchResults() {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func requestTopStories() {
         // Call API's to fetch data
-        sources.append(NytNewsAPI.sharedInstance)
-        
         for source in sources {
             try! source.requestTopStories(20, startingAt: 0, updateData: { (stories) in
                 self.topStories.append(contentsOf: stories)
@@ -63,6 +88,8 @@ class NewsData {
                 //update tableview
                 if self.updateFeedView != nil {
                     self.updateFeedView!()
+                } else {
+                    // error here...
                 }
             })
         }

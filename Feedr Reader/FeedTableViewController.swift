@@ -21,12 +21,13 @@ class FeedTableViewController: UITableViewController {
         
         tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
+        tableView.register(UINib.init(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: "loadingTableViewCell-ID")
         
         NewsData.sharedInstance.setFeedCallBack {
             self.tableView.reloadData()
             print("refreshing tableview")
         }
-        NewsData.sharedInstance.loadInitialData()
+        NewsData.sharedInstance.requestTopStories()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,41 +35,50 @@ class FeedTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
+    // MARK: - Table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  NewsData.sharedInstance.topCount
+        if NewsData.sharedInstance.isRequestingTop(){
+            return NewsData.sharedInstance.topCount + 1
+        } else {
+            return  NewsData.sharedInstance.topCount
+        }
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellStory = NewsData.sharedInstance.getTopStory(at: indexPath.row)
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "topStoryCell-ID", for: indexPath) as! TopStoryTableViewCell
-            //cell.headlineLabel.text = "Top Story Now!"
-            cell.headlineLabel.text = cellStory.headline
-            cell.storyImage.image = cellStory.image
+        
+        // Loading cell
+        if NewsData.sharedInstance.isRequestingTop() && indexPath.row == NewsData.sharedInstance.topCount {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadingTableViewCell-ID", for: indexPath)
             return cell
-        } else { // alternate between left and right image aligned versions of the small story cell
-            var reuseID: String
-            if indexPath.row % 2 == 0 {
-                reuseID = "rightStoryTableViewCell-ID"
-                
-            } else {
-                reuseID = "leftStoryTableViewCell-ID"
-                
+        }
+        
+        // story cells
+        if NewsData.sharedInstance.topCount != 0 {
+            let cellStory = NewsData.sharedInstance.getTopStory(at: indexPath.row)
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "topStoryCell-ID", for: indexPath) as! TopStoryTableViewCell
+                //cell.headlineLabel.text = "Top Story Now!"
+                cell.headlineLabel.text = cellStory.headline
+                cell.storyImage.image = cellStory.image
+                return cell
+            } else { // alternate between left and right image aligned versions of the small story cell
+                var reuseID: String
+                if indexPath.row % 2 == 0 {
+                    reuseID = "rightStoryTableViewCell-ID"
+                    
+                } else {
+                    reuseID = "leftStoryTableViewCell-ID"
+                    
+                }
+                let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
+                cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the left"
+                cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
+                cell.storyImageView.image = cellStory.image
+                return cell
             }
-            let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
-            cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the left"
-            cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
-            cell.storyImageView.image = cellStory.image
-            return cell
+        } else {
+            fatalError("Error in forcellrowat: Should not reach")
         }
     }
     

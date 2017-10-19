@@ -11,6 +11,7 @@ import Foundation
 //https://developer.nytimes.com/
 
 class NytNewsAPI: NewsAPI {
+    
     //MARK: CONSTANTS
     
     // static URL Components
@@ -70,8 +71,21 @@ class NytNewsAPI: NewsAPI {
     
     private init() {}
     
+    //MARK: PROPERTIES
+    private var _isRequestingTop = false
+    private var _isRequestingSearchResults = false
+    
     
     //MARK: NEWSAPI FUNCTIONS
+    
+    func isRequestingTop() -> Bool {
+        return _isRequestingTop
+    }
+    
+    func isRequestingSearchResults() -> Bool {
+        return _isRequestingSearchResults
+    }
+    
     func searchStories(_ count: Int, startingAt: Int, search: String?, updateData: @escaping ([NewsStory]) -> Void) throws {
         
         // https://api.nytimes.com/svc/search/v2/articlesearch.json?q=trump&sort=newest&api-key=6745696533b04c17a90c215f1106f56b
@@ -90,6 +104,8 @@ class NytNewsAPI: NewsAPI {
         }
         urlString += "&" + paramAPIKey + apiKey
         let requestURL = try! Network.safeURL(from: urlString)
+        
+        _isRequestingSearchResults = true
         
         // Setup the URL Session...
         let session = URLSession.shared.dataTask(with: requestURL ) {
@@ -152,6 +168,7 @@ class NytNewsAPI: NewsAPI {
                     }
                     
                     DispatchQueue.main.async {
+                        self._isRequestingSearchResults = false
                         updateData(stories)
                     }
                 } catch {
@@ -177,6 +194,8 @@ class NytNewsAPI: NewsAPI {
         if startingAt < 0 {
             throw NewsAPIError.negativeCount
         }
+        
+        _isRequestingTop = true
         
         // set up url with param's
         let urlString = topStoriesEndPoint + paramAPIKey + apiKey
@@ -231,6 +250,7 @@ class NytNewsAPI: NewsAPI {
                         stories.append(newStory)
                     }
                     DispatchQueue.main.async {
+                        self._isRequestingTop = false
                         updateData(stories)
                     }
                 } catch {

@@ -21,6 +21,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     // MARK: SEARCH BAR functions
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         NewsData.sharedInstance.search(forString: searchBar.text ?? "")
+        tableView.reloadData()
         searchBar.showsCancelButton = false
         searchBar.resignFirstResponder()
     }
@@ -35,12 +36,13 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         searchBar.resignFirstResponder()
     }
     
-    // MARK: TABLEVIEW FUNCTIONS
+    // MARK: VIEW CONTROLLER FUNCTIONS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Register prototype cell nibs
         tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
+        tableView.register(UINib.init(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: "loadingTableViewCell-ID")
         
         // set up the search controller
         searchBar.delegate = self
@@ -49,7 +51,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             self.tableView.reloadData()
             print("refreshing search tableview")
         }
-        NewsData.sharedInstance.search(forString: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,17 +58,25 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: TABLEVIEW FUNCTIONS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return NewsData.sharedInstance.searchCount
+        if NewsData.sharedInstance.isRequestingSearchResults(){
+            return NewsData.sharedInstance.searchCount + 1
+        } else {
+            return  NewsData.sharedInstance.searchCount
+        }
     }
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /*if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell-ID", for: indexPath) as! SearchTableViewCell
+        // Loading cell
+        if NewsData.sharedInstance.isRequestingSearchResults() && indexPath.row == NewsData.sharedInstance.searchCount {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadingTableViewCell-ID", for: indexPath)
             return cell
-        } else {*/ // alternate between left and right image aligned versions of the small story cell
+        }
+        
+        // story cells
+        if NewsData.sharedInstance.searchCount != 0 {
             let story = NewsData.sharedInstance.getSearchStory(at: indexPath.row)
             var reuseID: String
             if indexPath.row % 2 == 0 {
@@ -80,7 +89,9 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             cell.storyDescriptionLabel.text = story.description
             cell.storyImageView.image = story.image
             return cell
-        //}
+        } else {
+            fatalError("Error in forcellrowat: Should not reach")
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

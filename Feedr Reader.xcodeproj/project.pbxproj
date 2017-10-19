@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */; };
 		EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */; };
+		EF2F5EC21F987DA200536B16 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */; };
+		EF2F5EC31F987DA200536B16 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */; };
 		EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD61F951AB100853AF8 /* ArticleWebViewController.swift */; };
 		EF75ECFE1F951BA6001B1078 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */; };
 		EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */; };
@@ -18,7 +20,6 @@
 		EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC95D1F96479600D8CBCB /* NewsData.swift */; };
 		EF8CC9601F966EEF00D8CBCB /* NytNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC95F1F966EEF00D8CBCB /* NytNewsAPI.swift */; };
 		EF8CC9621F96778200D8CBCB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC9611F96778200D8CBCB /* Network.swift */; };
-		EF8CC96A1F980B8D00D8CBCB /* OldSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC9681F980B8D00D8CBCB /* OldSearchTableViewCell.swift */; };
 		EF8CC96B1F980B8D00D8CBCB /* OldSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8CC9691F980B8D00D8CBCB /* OldSearchTableViewCell.xib */; };
 		EF8CC96E1F980ED400D8CBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8CC96C1F980BE600D8CBCB /* Main.storyboard */; };
 		EF8CC9701F9830EA00D8CBCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */; };
@@ -45,12 +46,13 @@
 /* Begin PBXFileReference section */
 		EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftStoryTableViewCell.xib; sourceTree = "<group>"; };
+		EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		EF75ED061F951CCD001B1078 /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
 		EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 		EF8CC95D1F96479600D8CBCB /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		EF8CC95F1F966EEF00D8CBCB /* NytNewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytNewsAPI.swift; sourceTree = "<group>"; };
 		EF8CC9611F96778200D8CBCB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		EF8CC9681F980B8D00D8CBCB /* OldSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSearchTableViewCell.swift; sourceTree = "<group>"; };
 		EF8CC9691F980B8D00D8CBCB /* OldSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldSearchTableViewCell.xib; sourceTree = "<group>"; };
 		EF8CC96D1F980BE600D8CBCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -95,13 +97,13 @@
 			children = (
 				EFC80D201F8BF2A900B0E0CA /* AppDelegate.swift */,
 				EFC80D431F8C2DE500B0E0CA /* FeedTableViewController.swift */,
+				EFF9DBD61F951AB100853AF8 /* ArticleWebViewController.swift */,
 				EF8CC96F1F9830E900D8CBCB /* SearchViewController.swift */,
 				EFC80D461F8C2E2300B0E0CA /* TopStoryTableViewCell.swift */,
 				EFF9DBD41F951A9400853AF8 /* PickerTableViewCell.swift */,
 				EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */,
 				EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */,
-				EFF9DBD61F951AB100853AF8 /* ArticleWebViewController.swift */,
-				EF8CC9681F980B8D00D8CBCB /* OldSearchTableViewCell.swift */,
+				EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -109,6 +111,7 @@
 		EF75ED041F951C67001B1078 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */,
 				EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */,
 				EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */,
 				EF8CC96C1F980BE600D8CBCB /* Main.storyboard */,
@@ -268,6 +271,7 @@
 				EF8CC96E1F980ED400D8CBCB /* Main.storyboard in Resources */,
 				EF8CC96B1F980B8D00D8CBCB /* OldSearchTableViewCell.xib in Resources */,
 				EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */,
+				EF2F5EC31F987DA200536B16 /* LoadingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
+				EF2F5EC21F987DA200536B16 /* LoadingTableViewCell.swift in Sources */,
 				EF75ED011F951BA6001B1078 /* PickerTableViewCell.swift in Sources */,
 				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 				EF75ECFE1F951BA6001B1078 /* PickerTableViewController.swift in Sources */,
@@ -296,7 +301,6 @@
 				EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */,
 				EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */,
 				EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */,
-				EF8CC96A1F980B8D00D8CBCB /* OldSearchTableViewCell.swift in Sources */,
 				EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */,
 				EF75ED071F951CCD001B1078 /* NewsStory.swift in Sources */,
 				EF8CC95C1F95BC6500D8CBCB /* NewsAPI.swift in Sources */,

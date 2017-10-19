@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="loadingTableViewCell-ID" rowHeight="70" id="Mad-Fh-dD4" userLabel="Loading Table View Cell" customClass="LoadingTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mad-Fh-dD4" id="HrB-TX-6bT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-dT-hcX" userLabel="Activity Indicator">
+                        <rect key="frame" x="128.5" y="2.5" width="64" height="64.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="i9Q-dT-hcX" secondAttribute="height" multiplier="1:1" id="Wt0-gy-hTa"/>
+                        </constraints>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i9Q-dT-hcX" firstAttribute="centerY" secondItem="HrB-TX-6bT" secondAttribute="centerY" id="Hxp-SW-1ek"/>
+                    <constraint firstItem="i9Q-dT-hcX" firstAttribute="centerX" secondItem="HrB-TX-6bT" secondAttribute="centerX" id="xNy-pN-TaS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="i9Q-dT-hcX" firstAttribute="width" secondItem="HrB-TX-6bT" secondAttribute="width" multiplier="0.2" id="PZP-cR-uiv"/>
+            </constraints>
+            <connections>
+                <outlet property="statusIndicator" destination="i9Q-dT-hcX" id="ivC-1R-3Cs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

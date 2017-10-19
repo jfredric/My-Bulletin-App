@@ -14,7 +14,8 @@ enum NewsAPIError: Error {
 }
 
 protocol NewsAPI {
+    func isRequestingTop() -> Bool
+    func isRequestingSearchResults() -> Bool
     func requestTopStories(_ count: Int, startingAt: Int, updateData: @escaping ([NewsStory]) -> Void) throws
     func searchStories(_ count: Int, startingAt: Int, search: String?, updateData: @escaping ([NewsStory]) -> Void) throws
-    //func requestNext(_ count: Int)
 }
