@@ -99,9 +99,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row != 0 { // alternatively, make that cell not-selectable.
-            self.performSegue(withIdentifier: "showArticleFromSearch-ID", sender: NewsData.sharedInstance.getSearchStory(at: indexPath.row))
-        }
+        self.performSegue(withIdentifier: "showArticleFromSearch-ID", sender: NewsData.sharedInstance.getSearchStory(at: indexPath.row))
     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
