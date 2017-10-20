@@ -58,7 +58,11 @@ class FeedTableViewController: UITableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "topStoryCell-ID", for: indexPath) as! TopStoryTableViewCell
                 //cell.headlineLabel.text = "Top Story Now!"
                 cell.headlineLabel.text = cellStory.headline
-                cell.storyImage.image = cellStory.image
+                if cellStory.image == nil {
+                    cell.storyImage.image = UIImage(named: "no-image-available")
+                } else {
+                    cell.storyImage.image = cellStory.image
+                }
                 return cell
             } else { // alternate between left and right image aligned versions of the small story cell
                 var reuseID: String
@@ -72,7 +76,11 @@ class FeedTableViewController: UITableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
                 cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the left"
                 cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
-                cell.storyImageView.image = cellStory.image
+                if cellStory.image == nil {
+                    cell.storyImageView.image = UIImage(named: "no-image-available")
+                } else {
+                    cell.storyImageView.image = cellStory.image
+                }
                 return cell
             }
         } else {

@@ -86,7 +86,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
             cell.storyHeadlineLabel.text = story.headline
             cell.storyDescriptionLabel.text = story.description
-            cell.storyImageView.image = story.image
+            if story.image == nil {
+                cell.storyImageView.image = UIImage(named: "no-image-available")
+            } else {
+                cell.storyImageView.image = story.image
+            }
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "loadingTableViewCell-ID", for: indexPath)
@@ -96,18 +100,36 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row != 0 { // alternatively, make that cell not-selectable.
-            self.performSegue(withIdentifier: "showArticleFromSearch-ID", sender: nil)
+            self.performSegue(withIdentifier: "showArticleFromSearch-ID", sender: NewsData.sharedInstance.getSearchStory(at: indexPath.row))
         }
     }
-
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+        case "showArticleFromSearch-ID":
+            guard let navViewController = segue.destination as? UINavigationController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            guard let articleWebViewController = navViewController.viewControllers.first as? ArticleWebViewController else {
+                fatalError("Unexpected view: \(describing: navViewController.viewControllers.first) in \(navViewController)")
+            }
+            guard let selectedStory = sender as? NewsStory else {
+                fatalError("Unexpected sender: \(sender ?? "nil_NewsStory")")
+            }
+            
+            /*guard let indexPath = tableView.indexPath(for: selectedMealCell) else {
+             fatalError("The selected cell is not being displayed by the table")
+             }*/
+            
+            articleWebViewController.newsStory = selectedStory
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier ?? "nil_defaultSegue")")
+        }
     }
-    */
 
 }
