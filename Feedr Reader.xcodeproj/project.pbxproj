@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */; };
 		EF11638E1F910A330036B1CC /* LeftStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */; };
+		EF27579D1F9A55EC00D61864 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27579C1F9A55EC00D61864 /* SettingsViewController.swift */; };
 		EF2F5EC21F987DA200536B16 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */; };
 		EF2F5EC31F987DA200536B16 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */; };
 		EF2F5EC51F9911CF00536B16 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC41F9911CF00536B16 /* Alerts.swift */; };
 		EF2F5EC71F99625400536B16 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F5EC61F99625400536B16 /* Notifications.swift */; };
+		EF41439A1F99E6D10042C9BE /* SettingsChooseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4143991F99E6D10042C9BE /* SettingsChooseTableViewCell.swift */; };
 		EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD61F951AB100853AF8 /* ArticleWebViewController.swift */; };
 		EF75ECFE1F951BA6001B1078 /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */; };
 		EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */; };
@@ -48,10 +50,12 @@
 /* Begin PBXFileReference section */
 		EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftStoryTableViewCell.xib; sourceTree = "<group>"; };
+		EF27579C1F9A55EC00D61864 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 		EF2F5EC41F9911CF00536B16 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		EF2F5EC61F99625400536B16 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		EF4143991F99E6D10042C9BE /* SettingsChooseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChooseTableViewCell.swift; sourceTree = "<group>"; };
 		EF75ED061F951CCD001B1078 /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
 		EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 		EF8CC95D1F96479600D8CBCB /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				EFF9DBD31F951A9300853AF8 /* PickerTableViewController.swift */,
 				EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */,
 				EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */,
+				EF4143991F99E6D10042C9BE /* SettingsChooseTableViewCell.swift */,
+				EF27579C1F9A55EC00D61864 /* SettingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				EFC80D291F8BF2A900B0E0CA /* Feedr_Reader.xcdatamodeld in Sources */,
 				EF2F5EC21F987DA200536B16 /* LoadingTableViewCell.swift in Sources */,
 				EF75ED011F951BA6001B1078 /* PickerTableViewCell.swift in Sources */,
+				EF27579D1F9A55EC00D61864 /* SettingsViewController.swift in Sources */,
 				EFC80D471F8C2E2300B0E0CA /* TopStoryTableViewCell.swift in Sources */,
 				EF75ECFE1F951BA6001B1078 /* PickerTableViewController.swift in Sources */,
 				EFC80D441F8C2DE500B0E0CA /* FeedTableViewController.swift in Sources */,
@@ -307,6 +314,7 @@
 				EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */,
 				EF2F5EC51F9911CF00536B16 /* Alerts.swift in Sources */,
 				EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */,
+				EF41439A1F99E6D10042C9BE /* SettingsChooseTableViewCell.swift in Sources */,
 				EF2F5EC71F99625400536B16 /* Notifications.swift in Sources */,
 				EF75ECFC1F951BA6001B1078 /* ArticleWebViewController.swift in Sources */,
 				EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */,
