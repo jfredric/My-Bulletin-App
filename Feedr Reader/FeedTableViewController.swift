@@ -20,7 +20,7 @@ class FeedTableViewController: UITableViewController {
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: "loadingTableViewCell-ID")
         
-        NewsData.sharedInstance.setFeedCallBack {
+        NewsData.sharedInstance.setFeedUpdateCallBack() {
             self.tableView.reloadData()
             print("refreshing tableview")
         }
@@ -76,7 +76,8 @@ class FeedTableViewController: UITableViewController {
                 return cell
             }
         } else {
-            fatalError("Error in forcellrowat: Should not reach")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadingTableViewCell-ID", for: indexPath)
+            return cell
         }
     }
     

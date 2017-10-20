@@ -105,8 +105,15 @@ class NytNewsAPI: NewsAPI {
         urlString += "&" + paramAPIKey + apiKey
         let requestURL = try! Network.safeURL(from: urlString)
         
-        _isRequestingSearchResults = true
+        if !Network.isConnectedToNetwork() {
+            Alerts.messageAlert(title: "No Connection", message: "You are not connected to the internet", from: nil)
+            self._isRequestingTop = false
+            return
+        } else {
+            // move url session...
+        }
         
+        _isRequestingSearchResults = true
         // Setup the URL Session...
         let session = URLSession.shared.dataTask(with: requestURL ) {
             (data, response, error) in
@@ -200,12 +207,18 @@ class NytNewsAPI: NewsAPI {
         // set up url with param's
         let urlString = topStoriesEndPoint + paramAPIKey + apiKey
         let requestURL = try! Network.safeURL(from: urlString)
-    
+        
+        if !Network.isConnectedToNetwork() {
+            Alerts.messageAlert(title: "No Connection", message: "You are not connected to the internet", from: nil)
+            self._isRequestingTop = false
+            return
+        } else {
+            // move url session...
+        }
         // Setup the URL Session...
         let session = URLSession.shared.dataTask(with: requestURL ) {
         (data, response, error) in
             // Process the Response...
-         
             if error != nil {
                 // Handle Error and Alert User
                 print("Networking Error: \(String(describing: error) )")

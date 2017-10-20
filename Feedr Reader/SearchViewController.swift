@@ -46,7 +46,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         // set up the search controller
         searchBar.delegate = self
 
-        NewsData.sharedInstance.setSearchCallBack {
+        NewsData.sharedInstance.setSearchUpdateCallBack {
             self.tableView.reloadData()
             print("refreshing search tableview")
         }
@@ -89,7 +89,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             cell.storyImageView.image = story.image
             return cell
         } else {
-            fatalError("Error in forcellrowat: Should not reach")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadingTableViewCell-ID", for: indexPath)
+            return cell
         }
     }
 

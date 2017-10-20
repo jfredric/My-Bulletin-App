@@ -51,11 +51,11 @@ class NewsData {
     }
     
     // initializing the call backs to update the table views
-    func setFeedCallBack(with callback: @escaping () -> Void) {
+    func setFeedUpdateCallBack(with callback: @escaping () -> Void) {
         updateFeedView = callback
     }
     
-    func setSearchCallBack(with callback: @escaping () -> Void) {
+    func setSearchUpdateCallBack(with callback: @escaping () -> Void) {
         updateSearchView = callback
     }
     

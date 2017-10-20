@@ -35,7 +35,7 @@
 * [ ] Look great in both landscape and portrait and reflect Material Design principles
 * [x] does not hang
 * [ ] does not crash
-* [ ] Include at least one Notifications feature (e.g. reminder, alarm)
+* [x] Include at least one Notifications feature (e.g. reminder, alarm)
 * [x] Use Auto Layout
 * [x] Use a tableview pattern
 * [x] Use custom tableviews with custom tableview cell classes
@@ -72,14 +72,6 @@ By the end of week 6:
 
 ---
 
-#### Suggested Ways to Get Started
-
-- Complete as much of the layout as possible before working on your logic.
-- Write pseudocode before you write actual code. Thinking through the logic helps.
-- Test functionality as soon as you complete it.
-
----
-
 ### Useful Resources
 
 - [Directory of APIs](http://www.programmableweb.com/apis/directory)
@@ -92,13 +84,4 @@ By the end of week 6:
 
 #### Project Feedback + Evaluation
 
-Your project will be [evaluated using the attached rubric](./rubric.md), which assesses your technical requirements based on the scale below:
-
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _(If applicable) Exceeds expectations, you wonderful creature, you!_
-
-This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+(Tom and Zon fill in feedback here)
