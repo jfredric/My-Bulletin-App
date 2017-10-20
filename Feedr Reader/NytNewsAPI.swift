@@ -174,8 +174,12 @@ class NytNewsAPI: NewsAPI {
                         stories.append(newStory)
                     }
                     
+                    // finished fetching data
                     DispatchQueue.main.async {
                         self._isRequestingSearchResults = false
+                        if stories.count == 0 {
+                            Alerts.messageAlert(title: "No Results", message: "0 results found for '\(search!)'", from: nil)
+                        }
                         updateData(stories)
                     }
                 } catch {
