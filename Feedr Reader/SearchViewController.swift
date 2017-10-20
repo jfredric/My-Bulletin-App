@@ -85,7 +85,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             }
             let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
             cell.storyHeadlineLabel.text = story.headline
-            cell.storyDescriptionLabel.text = story.description
+            //cell.storyDescriptionLabel.text = story.description
             if story.image == nil {
                 cell.storyImageView.image = UIImage(named: "no-image-available")
             } else {

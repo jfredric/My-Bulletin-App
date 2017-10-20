@@ -15,44 +15,34 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftStoryTableViewCell-ID" rowHeight="76" id="Iys-L9-7Wi" userLabel="Left Image Story Table View Cell" customClass="SmallStoryTableViewCell" customModule="Feedr_Reader" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iys-L9-7Wi" id="YCv-S5-PTM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iys-L9-7Wi" id="YCv-S5-PTM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bGm-V9-Lvy">
-                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGm-V9-Lvy">
+                        <rect key="frame" x="8" y="8" width="120" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="ATG-Iq-MlP"/>
-                            <constraint firstAttribute="height" constant="60" id="NCa-E1-ne9"/>
+                            <constraint firstAttribute="width" constant="120" id="ATG-Iq-MlP"/>
+                            <constraint firstAttribute="height" constant="120" id="NCa-E1-ne9"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuU-1i-CC0">
-                        <rect key="frame" x="76" y="8" width="236" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuU-1i-CC0">
+                        <rect key="frame" x="136" y="8" width="176" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac0-77-DhI">
-                        <rect key="frame" x="76" y="37" width="236" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ac0-77-DhI" firstAttribute="leading" secondItem="kuU-1i-CC0" secondAttribute="leading" id="3aT-S6-nUt"/>
-                    <constraint firstItem="ac0-77-DhI" firstAttribute="top" secondItem="kuU-1i-CC0" secondAttribute="bottom" constant="8" symbolic="YES" id="8KW-nJ-faW"/>
                     <constraint firstItem="bGm-V9-Lvy" firstAttribute="top" secondItem="YCv-S5-PTM" secondAttribute="topMargin" id="G0x-Jd-sX2"/>
                     <constraint firstItem="bGm-V9-Lvy" firstAttribute="leading" secondItem="YCv-S5-PTM" secondAttribute="leadingMargin" id="LPv-re-d7y"/>
                     <constraint firstItem="kuU-1i-CC0" firstAttribute="top" secondItem="YCv-S5-PTM" secondAttribute="top" constant="8" id="g9p-9u-2qk"/>
                     <constraint firstAttribute="bottom" secondItem="bGm-V9-Lvy" secondAttribute="bottom" constant="8" id="khP-aA-h2s"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ac0-77-DhI" secondAttribute="trailing" id="m2Q-MP-ZzJ"/>
                     <constraint firstItem="kuU-1i-CC0" firstAttribute="leading" secondItem="bGm-V9-Lvy" secondAttribute="trailing" constant="8" id="ps9-0E-2m8"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kuU-1i-CC0" secondAttribute="trailing" id="r1Y-rf-XkB"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="storyDescriptionLabel" destination="ac0-77-DhI" id="Edw-nh-7P7"/>
                 <outlet property="storyHeadlineLabel" destination="kuU-1i-CC0" id="smN-0T-6LU"/>
                 <outlet property="storyImageView" destination="bGm-V9-Lvy" id="fX0-77-5BG"/>
             </connections>

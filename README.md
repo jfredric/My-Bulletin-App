@@ -32,7 +32,7 @@
 * Share to social media
   * [ ] share individual photos
   * [x] share stories
-* [ ] Look great in both landscape and portrait and reflect Material Design principles
+* [x] Look great in both landscape and portrait and reflect Material Design principles
 * [x] does not hang
 * [ ] does not crash
 * [x] Include at least one Notifications feature (e.g. reminder, alarm)

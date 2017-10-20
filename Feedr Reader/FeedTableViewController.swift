@@ -75,7 +75,7 @@ class FeedTableViewController: UITableViewController {
                 }
                 let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! SmallStoryTableViewCell
                 cell.storyHeadlineLabel.text = cellStory.headline //"Stories aligned to the left"
-                cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
+                //cell.storyDescriptionLabel.text = cellStory.description //"bla bla bla bla"
                 if cellStory.image == nil {
                     cell.storyImageView.image = UIImage(named: "no-image-available")
                 } else {
