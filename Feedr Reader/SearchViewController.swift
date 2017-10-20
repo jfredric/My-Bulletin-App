@@ -42,6 +42,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         tableView.register(UINib.init(nibName: "RightStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "rightStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LeftStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "leftStoryTableViewCell-ID")
         tableView.register(UINib.init(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: "loadingTableViewCell-ID")
+        tableView.register(UINib.init(nibName: "NoImageStoryTableViewCell", bundle: nil), forCellReuseIdentifier: "noImageStoryTableViewCell-ID")
+        
         
         // set up the search controller
         searchBar.delegate = self
@@ -77,7 +79,15 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         // story cells
         if NewsData.sharedInstance.searchCount != 0 {
             let story = NewsData.sharedInstance.getSearchStory(at: indexPath.row)
+            
+            if story.image == nil {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "noImageStoryTableViewCell-ID", for: indexPath) as! NoImageStoryTableViewCell
+                cell.headlineLabel.text = story.headline
+                return cell
+            }
+            
             var reuseID: String
+            
             if indexPath.row % 2 == 0 {
                 reuseID = "rightStoryTableViewCell-ID"
             } else {

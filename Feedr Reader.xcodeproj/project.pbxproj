@@ -20,6 +20,8 @@
 		EF75ED001F951BA6001B1078 /* SmallStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD91F951AD000853AF8 /* SmallStoryTableViewCell.swift */; };
 		EF75ED011F951BA6001B1078 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9DBD41F951A9400853AF8 /* PickerTableViewCell.swift */; };
 		EF75ED071F951CCD001B1078 /* NewsStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75ED061F951CCD001B1078 /* NewsStory.swift */; };
+		EF851CE61F9A64E5004AA3AF /* NoImageStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF851CE41F9A64E5004AA3AF /* NoImageStoryTableViewCell.swift */; };
+		EF851CE71F9A64E5004AA3AF /* NoImageStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF851CE51F9A64E5004AA3AF /* NoImageStoryTableViewCell.xib */; };
 		EF8CC95C1F95BC6500D8CBCB /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */; };
 		EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC95D1F96479600D8CBCB /* NewsData.swift */; };
 		EF8CC9601F966EEF00D8CBCB /* NytNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CC95F1F966EEF00D8CBCB /* NytNewsAPI.swift */; };
@@ -57,6 +59,8 @@
 		EF2F5EC61F99625400536B16 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		EF4143991F99E6D10042C9BE /* SettingsChooseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChooseTableViewCell.swift; sourceTree = "<group>"; };
 		EF75ED061F951CCD001B1078 /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
+		EF851CE41F9A64E5004AA3AF /* NoImageStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageStoryTableViewCell.swift; sourceTree = "<group>"; };
+		EF851CE51F9A64E5004AA3AF /* NoImageStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoImageStoryTableViewCell.xib; sourceTree = "<group>"; };
 		EF8CC95B1F95BC6500D8CBCB /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 		EF8CC95D1F96479600D8CBCB /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		EF8CC95F1F966EEF00D8CBCB /* NytNewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytNewsAPI.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				EF2F5EC01F987DA200536B16 /* LoadingTableViewCell.swift */,
 				EF4143991F99E6D10042C9BE /* SettingsChooseTableViewCell.swift */,
 				EF27579C1F9A55EC00D61864 /* SettingsViewController.swift */,
+				EF851CE41F9A64E5004AA3AF /* NoImageStoryTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EF2F5EC11F987DA200536B16 /* LoadingTableViewCell.xib */,
+				EF851CE51F9A64E5004AA3AF /* NoImageStoryTableViewCell.xib */,
 				EF1163881F90A33B0036B1CC /* RightStoryTableViewCell.xib */,
 				EF11638C1F910A330036B1CC /* LeftStoryTableViewCell.xib */,
 				EF8CC96C1F980BE600D8CBCB /* Main.storyboard */,
@@ -279,6 +285,7 @@
 			files = (
 				EF11638A1F90A33B0036B1CC /* RightStoryTableViewCell.xib in Resources */,
 				EFC80D2E1F8BF2A900B0E0CA /* LaunchScreen.storyboard in Resources */,
+				EF851CE71F9A64E5004AA3AF /* NoImageStoryTableViewCell.xib in Resources */,
 				EFC80D2B1F8BF2A900B0E0CA /* Assets.xcassets in Resources */,
 				EF8CC96E1F980ED400D8CBCB /* Main.storyboard in Resources */,
 				EF8CC96B1F980B8D00D8CBCB /* OldSearchTableViewCell.xib in Resources */,
@@ -311,6 +318,7 @@
 				EF8CC9621F96778200D8CBCB /* Network.swift in Sources */,
 				EF8CC9601F966EEF00D8CBCB /* NytNewsAPI.swift in Sources */,
 				EFC80D211F8BF2A900B0E0CA /* AppDelegate.swift in Sources */,
+				EF851CE61F9A64E5004AA3AF /* NoImageStoryTableViewCell.swift in Sources */,
 				EFD781E91F952245004F93DC /* CnnNewsAPI.swift in Sources */,
 				EF2F5EC51F9911CF00536B16 /* Alerts.swift in Sources */,
 				EF8CC95E1F96479600D8CBCB /* NewsData.swift in Sources */,
