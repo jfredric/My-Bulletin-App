@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import os.lock
+import os.log
 import SafariServices
 
 class ArticleWebViewController: UIViewController, UINavigationControllerDelegate {

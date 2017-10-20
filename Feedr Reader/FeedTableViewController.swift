@@ -24,6 +24,7 @@ class FeedTableViewController: UITableViewController {
             self.tableView.reloadData()
             print("refreshing tableview")
         }
+        //Notifications.sharedInstance.createNotification(identifier: "testReminder", title: "Reminder", body: "check for new stories", time: 60 ) // create a notifification to go off after ? seconds
         NewsData.sharedInstance.requestTopStories()
     }
 
