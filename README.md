@@ -20,7 +20,7 @@
 #### Requirements
 * [x] Include **at least 1 prototypes**
 * [x] Hit at least one news-based API
-* [ ] Photo-based, rather than text-based
+* [x] Photo-based, rather than text-based
 * Allow the user to click on a photo and read the article to which the photo relates
   * [x] Open article in Safari
   * [x] Show detail view
@@ -30,7 +30,7 @@
   * Topics (optional)
   * Location (optional)
 * Share to social media
-  * [ ] share individual photos
+  * [ ] share individual photos (difference?)
   * [x] share stories
 * [x] Look great in both landscape and portrait and reflect Material Design principles
 * [x] does not hang

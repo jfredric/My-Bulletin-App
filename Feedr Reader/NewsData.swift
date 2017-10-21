@@ -72,11 +72,11 @@ class NewsData {
     // are we still getting data for top stories
     func isRequestingSearchResults() -> Bool {
         for source in sources {
-            if source.isRequestingSearchResults() {
-                return true
+            if !source.isRequestingSearchResults() {
+                return false
             }
         }
-        return false
+        return true
     }
     
     func requestTopStories() {

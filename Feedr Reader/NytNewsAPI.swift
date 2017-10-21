@@ -107,7 +107,7 @@ class NytNewsAPI: NewsAPI {
         
         if !Network.isConnectedToNetwork() {
             Alerts.messageAlert(title: "No Connection", message: "You are not connected to the internet", from: nil)
-            self._isRequestingTop = false
+            self._isRequestingSearchResults = false
             return
         } else {
             // move url session...
