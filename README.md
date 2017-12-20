@@ -1,8 +1,8 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Feedr Reader
+# MyBulletin
 
 #### Overview
 
-Your news at your fingertips. 
+Your news at your fingertips.
 
 Currently supports the New York Times
 
@@ -49,9 +49,3 @@ Currently supports the New York Times
 * [ ] Integrate with the Twitter and/or Facebook's APIs
 * [ ] Allow the user to download photos, manipulate them by adding text, etc. (image manipulation libraries will probably be helpful here...) and then share their manipulated image via social media
 * [x] Create multiple prototype cells to use in your app
-
----
-
-#### Project Feedback + Evaluation
-
-(Tom and Zon fill in feedback here)
